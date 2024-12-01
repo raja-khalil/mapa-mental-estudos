@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Introdução à IA e Serviços de IA do Azure","children":[{"content":"O que é Inteligência Artificial?","children":[{"content":"Percepção visual","children":[],"payload":{"lines":"5,6"}},{"content":"Análise de texto","children":[],"payload":{"lines":"6,7"}},{"content":"Conversa","children":[],"payload":{"lines":"7,8"}},{"content":"Tomada de decisão","children":[],"payload":{"lines":"8,10"}}],"payload":{"lines":"2,3"}},{"content":"Desenvolvendo Soluções de Pesquisa Visual Computacional com a Visão de IA do Azure","children":[{"content":"Serviços de Análise e Tradução de Texto no Azure","children":[{"content":"<strong>Analisar Textos</strong>","children":[{"content":"Serviço de Linguagem de IA do Azure","children":[{"content":"<strong>Recursos pré-configurados</strong>:","children":[{"content":"Análise de Sentimentos","children":[],"payload":{"lines":"19,20"}},{"content":"Detecção de Entidades","children":[],"payload":{"lines":"20,21"}},{"content":"Classificação de Texto","children":[],"payload":{"lines":"21,23"}}],"payload":{"lines":"18,23"}}],"payload":{"lines":"17,23"}}],"payload":{"lines":"16,23"}}],"payload":{"lines":"14,15"}}],"payload":{"lines":"12,13"}},{"content":"Desenvolvendo Soluções de IA Generativa com o Serviço OpenAI do Azure","children":[{"content":"Introdução ao Serviço OpenAI do Azure","children":[{"content":"<strong>O que é IA Generativa?</strong>","children":[{"content":"\n<p data-lines=\"30,31\"><strong>Inteligência Artificial Generativa</strong> é o campo da IA que se concentra em criar novos dados ou conteúdos a partir de modelos treinados. Exemplos incluem geração de texto, imagens e até mesmo música.</p>","children":[],"payload":{"lines":"30,32"}},{"content":"\n<p data-lines=\"32,33\"><strong>Objetivo</strong>: Criar sistemas que possam gerar novos conteúdos de maneira autônoma, com base em um conjunto de dados de treinamento.</p>","children":[],"payload":{"lines":"32,34"}},{"content":"\n<p data-lines=\"34,35\"><strong>Principais Tecnologias</strong>:</p>","children":[{"content":"Modelos de linguagem (como o GPT-3 e GPT-4)","children":[],"payload":{"lines":"35,36"}},{"content":"Modelos de imagens (como o DALL·E)","children":[],"payload":{"lines":"36,37"}},{"content":"Modelos multimodais","children":[],"payload":{"lines":"37,38"}}],"payload":{"lines":"34,38"}}],"payload":{"lines":"29,38"}}],"payload":{"lines":"27,28"}}],"payload":{"lines":"25,26"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+- Criando Soluções de Pesquisa Visual Computacional com a Visão de IA do Azure
+    - Entendo como funciona Analise e Manipulação de imagens no Azure
+        - Analisar e Manipular imagens
+            - Visão de Ia do Azure - Analise de Imagem
+                - Analise de Imagem
+                    - geração de legendas e tags
+                    - Detecção de objetos
+                    - detecção de pessoas
+                    - Reconhecimento óptico de caracteres
+            - Analise de imagem
+                - Miniatura com recorte inteligente
+                - Remoção de plano de fundo
+                - Inserções multimodais
+                - Reconhecimento de produto
+            - Recursos Azure
+                - Recurso autônomo da Visão de IA do Azure
+                - Recurso multisserviço dos Serviços de IA do Azure
+                - Alguns novos recursos são limitados a regiões específicas
+                - pode usar API dos Azure
+            - APIs de Análise de Imagem
+                - Chamada única de análise para recuperar recursos especificados na enumeração VisualFeatures
+                    - VisualFeatures.Caption
+                    - VisualFeatures.DenseCaptions
+                    - VisualFeatures.Tags
+                    - VisualFeatures.Objects
+                    - VisualFeatures.SmartCrops
+                    - VisualFeatures.People
+                    - VisualFeatures.Read
+                - Os SDKs definem o cliente e, em seguida, chamam a função analyse() a partir dele
+                - Cliente define ponto de extremidade e chave de recursos Analyze() precisa de
+                    - Dados de imagem do arquivo ou URL
+                    - Recursos visuais para analisar
+                    - (Opcional) Opçoes de análise: Quais Recursos, idioma e outras opções para a análise
+                
+            - Opções da análise de imagem
+                - Opções de análise
+                    - Idioma
+                    - Versão do modelo
+                    - Taxas de proporção de corte
+                    - Legendas neutras em relação a gênero
+                    - 
+            - Visão de IA do Azure - OCR
+                - Usar análise de imagem com o recurso LEITURA
+                - Visão OCR vs. Informação de Documentos:
+                    - OCR: Imagens gerais , não documentadas, com quantidades, menores de texto. API síncrona
+                    - Informação de Documentos: Ideal para documentos com muito texto. API assíncrona.
+                - Resultado em JSON (REST) ou objetivo (SDK) de estrutura semelhante
+    - Modelos visão Personalizada com a visão de IA do Azure
+        - Dois tipos de modelos de visão persoanalizada
+            - Visão personalizada de IA do Azure (Serviço Anterior)
+            - Portal: Customvision.ai
+            - Modelo base: CNN (Rede Neural Convolucional)
+            - Tarefas
+                - Classificação de imagens
+                - Detecção de objetos
+                - Rotulagem
+                    - Customvision.ai
+                - Dados mínimos de treinamento necessários
+                    - 15 imagens por categoria
+                - Armazenamento de dados de treinamento
+                    - Carregado no serviço de Visão Personalizada
+            - Modelos personalizados de VIsão de IA (novo modelo FLorence)
+                - Portal
+                    - Vision Studio
+                    - Modelo Base
+                        - transformador (Multimodal)
+                    - tarefas
+                        - Classificação de imagens
+                        - Detecção de Objtetos
+                        - Reconhecimento de produtos
+            - Rotulagem
+                - Arquivo do Estúdio do AML ou COCO
+                - Dados mínimos de treinamentos necessários:
+                    - 2 a 5 imagens por categoria
+                - Armazenamento de dados de treinamento
+                    - Na Conta de Armazenamento de blobs do usuário
+            - Treine modelso personalizados com sua propria imagens
+                - Carrega suas imagens
+                - Rotule suas imagens
+                - Treinar seu modelo
+                - Consulte seu modelo com novas imagens para prever rótulos
+            - Os dados de rotulagem residem no arquivo COCO
+                - Use suas próprias imagens para treinar um modelo
+                - Usar o modelo para prever rótulo para novas imagens
+            - Sobre arquivos COCO
+                - ARquivo JSON com campos específicos
+                    - images
+                    - annotations
+                    - categorias
+                - Define dados de rotulagem do projeto de ML do Azure
+            - O que é classificação de imagem?
+                - Treinar um modelo para prever o rótulo de classe para a imagem
+                - Em outas palavras, isso é uma imagem de quê?
+            - Treinar um modelo personalizado
+                - Usar o Azure Vision Studio
+                    - Criar um projeto de modelo personalizado ou recuperar um existente
+                    - Selecione seu recurso, se necessário
+                    - Adicione os seus conjuntos de dados e especifique o tipo de modelo:
+                        - Classificação de imagem
+                            - Atribuir rótulo a cada imagem
+                        - Detecção de objetos
+                            - Defina caixas delimitadoras para objetos em cada imagem
+                        - Crie seu projeto do Azure ML e rotule suas imagens (se nenhum arquivo COCO existir)
+                        - Adicionar arquivo COCO (do Projeto do Azure ML ou criado anteriormente)
+                        - treinar um novo modelo
+            - 
+    - Detectar Rostos com a Visão de IA do Azure
+        - Opções para detecção, analise e reconhecimento facial
+            - Analise de imagens
+                - Detecção de pessoas
+                - Apenas localização fornecida
+        - Considerações para detecção facial e reconhecimento facial
+            - Os princípios da IA responsável se aplicam a todos os tipos de aplivativos, mas sistemas que depedem de dados faciais podem ser particulamente problemático
+            - Como uma proteção para o uso de IA responsável, o reconhecimento facial, identificação, verificação e comparação está por trás de uma política de Acesso Limitado, exigindo que o usuário seja aprovados pela Microsoft antes de habilitar esses recursos.
+            - Segurança e privacidade de dados
+                - Sistemas baseados em dados faciais devem proteger a privacidade individual, garantindo que os dados pessoais identificáveis não sejam acessados de forma inadequada.
+            - Transparência
+                - Garanta que os usuários estejam informados sobre como a imagem deles será usada e quem terá acesso a ela.
+            - Imparcialidade e inclusividade
+                - O reconhecimento facial não deve ser usado de uma maneira prejudial aos indivíduos com base na aparência deles e a certas pessoas como alvo de forma injusta.
+            - 
+        - O serviço de Detecção Facial
+            - Detecção facial
+            - análise de atributos faciais
+            - localização do marco facial
+                - Nariz, olhos, boca
+            - Comparação facial
+                - Exige aprovação de acesso limitado
+            - Reconhecimento e identificação facial
+                - Exige aprovação de acesso limitado
+            - Vivacidade facial
+                - Exige aprovação de Acesso limitado
+            - Pode ser usado como:
+                - Recurso de Detecção facial autônomo
+                - Recurso multosserviço dos Serviços de IA do Azure
+        - Identificação facial detectada
+            - A cada rosto detectado é atribuído um ID anônimo
+                - Retido em seu recurso de serviço por 24 horas
+                - Pode ser usado para comparar rostos em várias imagens
+                - Verifique os rostos para determinar se são o mesmo indivíduo
+                - Encontre rostos semelhantes para identificar rosto com característica semelhantes
+        - Reconhecimento facial persistente
+            - Treinar um modelo de reconhecimento facial usando imagens de rosto
+                - Criar um grupo de pessoas para as pessoas que você deseja identificar
+                - Adicionar uma pessoa para cada indivíduo
+                - Adicionar vários rostos detectados a cada pessoa
+                    - Estes tornam-se rostos persistentes
+                - Treinar o modelo
+            - Use o modelo para reconhecimento facial
+                - Identificar uma pessao individual
+                - Verificar o rosto de uma pessoa indivual
+                - Encontrar rostos semelhantes a um rosto persistente
+        - Usar o ponto de extremidade Detecção Facial, especificando Faces como um recurso visual
+        - Observação: a maioria dos recursos, como reconhecimento e identificação, não está habilitada para novos usuários
+    - Trabalhando com Analise de Videos no Azure
+        - Video Indexer
+            - Analise de video
+                - Reconhecimento facial (acesso limitado)
+                - Reconhecimento óptimo de caracteres
+                - Transcrição de fala
+                - Tópicos
+                - Sentimentos
+                - Rótulos
+                - Moderação de Conteúdo
+                - Segmentação de Cena
+        - Insights personalizados
+            - Modelos pré-definidos para reconhecimento de linguagem, celebridades conhecidas, marcas
+            - Crie seu próprio modelo para
+                - pessoas
+                    - Treinar i reconhecimento facil  a partir de imagens de amostra
+                - idioma
+                    - Reconhecer termos específicos do setor/organização
+                - Marcas
+                    - Reconhecer marcas de produtos, empresas, projetos
+            - Compartilhar insights e analise em página da Web
+            - 
+        - automatize a análise de video com a API REST

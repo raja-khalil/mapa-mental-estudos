@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Introdução à IA e Serviços de IA do Azure","children":[{"content":"O que é Inteligência Artificial?","children":[{"content":"Recursos comuns de IA:","children":[{"content":"<strong>Percepção Visual</strong>","children":[],"payload":{"lines":"6,7"}},{"content":"<strong>Análise de Texto</strong>","children":[],"payload":{"lines":"7,8"}},{"content":"<strong>Conversa</strong>","children":[],"payload":{"lines":"8,9"}},{"content":"<strong>Tomada de Decisão</strong>","children":[],"payload":{"lines":"9,11"}}],"payload":{"lines":"5,6"}}],"payload":{"lines":"2,3"}},{"content":"Desenvolvendo Soluções de Pesquisa Visual Computacional com a Visão de IA do Azure","children":[{"content":"Serviços de Análise e Tradução de Texto no Azure","children":[{"content":"Analisar Textos","children":[{"content":"<strong>Serviço de Linguagem de IA do Azure</strong>","children":[{"content":"Recursos Pré-configurados:","children":[{"content":"Análise de Sentimento","children":[],"payload":{"lines":"20,21"}},{"content":"Detecção de Entidades Nomeadas (NER)","children":[],"payload":{"lines":"21,22"}},{"content":"Identificação de Tópicos","children":[],"payload":{"lines":"22,24"}}],"payload":{"lines":"19,24"}}],"payload":{"lines":"18,24"}}],"payload":{"lines":"17,18"}}],"payload":{"lines":"15,16"}}],"payload":{"lines":"13,14"}},{"content":"Desenvolvendo Soluções de IA Generativa com o Serviço OpenAI do Azure","children":[{"content":"Introdução ao Serviço OpenAI do Azure","children":[{"content":"<strong>O que é IA Generativa?</strong>","children":[{"content":"\n<p data-lines=\"30,31\">Inteligência Artificial Generativa refere-se a modelos de IA que geram novas informações, como textos, imagens, música e outros dados, com base em padrões aprendidos de grandes volumes de dados.</p>","children":[],"payload":{"lines":"30,32"}},{"content":"\n<p data-lines=\"32,33\"><strong>Exemplos de IA Generativa:</strong></p>","children":[{"content":"Geração de Texto (GPT-3, GPT-4)","children":[],"payload":{"lines":"33,34"}},{"content":"Criação de Imagens (DALL·E)","children":[],"payload":{"lines":"34,35"}},{"content":"Geração de Áudio e Música","children":[],"payload":{"lines":"35,37"}}],"payload":{"lines":"32,37"}},{"content":"\n<p data-lines=\"37,38\"><strong>Aplicações da IA Generativa:</strong></p>","children":[{"content":"Chatbots e assistentes virtuais","children":[],"payload":{"lines":"38,39"}},{"content":"Criação de conteúdo automatizado","children":[],"payload":{"lines":"39,40"}},{"content":"Design e criatividade digital","children":[],"payload":{"lines":"40,42"}}],"payload":{"lines":"37,42"}}],"payload":{"lines":"29,42"}}],"payload":{"lines":"28,29"}}],"payload":{"lines":"26,27"}},{"content":"Criando uma Solução de Mineração de Conhecimento","children":[{"content":"Utilizando o Azure AI Search para Indexação e Pesquisa","children":[{"content":"Implementar uma Solução de Pesquisa Inteligente","children":[{"content":"<strong>Azure AI Search</strong>","children":[{"content":"\n<p data-lines=\"51,52\"><strong>Mineração de Conhecimento alimentada por AI</strong></p>","children":[{"content":"<strong>Indexação de Dados:</strong>","children":[{"content":"Processamento de dados para criar um índice que permita pesquisa rápida e eficiente.","children":[],"payload":{"lines":"53,54"}}],"payload":{"lines":"52,54"}},{"content":"<strong>Consultas Inteligentes:</strong>","children":[{"content":"Consultas avançadas com apoio de IA para fornecer respostas mais precisas.","children":[],"payload":{"lines":"55,56"}}],"payload":{"lines":"54,56"}},{"content":"<strong>Análise de Tendências:</strong>","children":[{"content":"Extração de insights de grandes volumes de dados não estruturados.","children":[],"payload":{"lines":"57,59"}}],"payload":{"lines":"56,59"}}],"payload":{"lines":"51,59"}},{"content":"\n<p data-lines=\"59,60\"><strong>Componentes principais do Azure AI Search:</strong></p>","children":[{"content":"Indexadores para dados não estruturados (texto, PDFs, etc.)","children":[],"payload":{"lines":"60,61"}},{"content":"Capacidades de Machine Learning para melhorar os resultados de busca.","children":[],"payload":{"lines":"61,63"}}],"payload":{"lines":"59,63"}},{"content":"\n<p data-lines=\"63,64\"><strong>Exemplo de Uso:</strong></p>","children":[{"content":"Uma plataforma de e-commerce que utiliza AI Search para fornecer resultados de pesquisa inteligentes e recomendações personalizadas.","children":[],"payload":{"lines":"64,66"}}],"payload":{"lines":"63,66"}}],"payload":{"lines":"50,66"}}],"payload":{"lines":"48,49"}}],"payload":{"lines":"46,47"}}],"payload":{"lines":"44,45"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
