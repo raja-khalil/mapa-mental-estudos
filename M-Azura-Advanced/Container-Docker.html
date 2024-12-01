@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.8.0/styles/default.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Criando Container com Docker","children":[{"content":"Overview Docker","children":[{"content":"\n<p data-lines=\"3,4\"><strong>O que é Docker?</strong></p>","children":[{"content":"Docker é uma plataforma de containers que permite empacotar uma aplicação junto com suas dependências, criando um ambiente isolado e portátil.","children":[],"payload":{"lines":"4,5"}},{"content":"Um container simula o que a aplicação precisa para rodar, agindo como uma amostragem do sistema operacional.","children":[],"payload":{"lines":"5,6"}},{"content":"A aplicação roda dentro do container, garantindo que ela funcione da mesma maneira em diferentes sistemas.","children":[],"payload":{"lines":"6,7"}},{"content":"Facilita a portabilidade de aplicativos entre ambientes de desenvolvimento, teste e produção.","children":[],"payload":{"lines":"7,9"}}],"payload":{"lines":"3,9"}},{"content":"\n<p data-lines=\"9,10\"><strong>Benefícios do Docker</strong></p>","children":[{"content":"<strong>Portabilidade</strong>: Os containers podem ser executados em qualquer lugar onde o Docker esteja instalado, independentemente do sistema operacional subjacente.","children":[],"payload":{"lines":"10,11"}},{"content":"<strong>Eficiência</strong>: Reduz o uso de recursos ao compartilhar o sistema operacional host, sem a necessidade de máquinas virtuais completas.","children":[],"payload":{"lines":"11,12"}},{"content":"<strong>Isolamento</strong>: Cada container é isolado, permitindo que várias versões de uma aplicação sejam executadas simultaneamente em um único sistema sem conflitos.","children":[],"payload":{"lines":"12,13"}},{"content":"<strong>Escalabilidade</strong>: Facilita a criação de múltiplas instâncias de um aplicativo e a escalabilidade automática.","children":[],"payload":{"lines":"13,15"}}],"payload":{"lines":"9,15"}}],"payload":{"lines":"2,3"}},{"content":"Criando Containers com Docker","children":[{"content":"Passo 1: Instalar o Docker","children":[{"content":"Baixe e instale o Docker em seu sistema operacional:","children":[{"content":"<a href=\"https://www.docker.com/products/docker-desktop\">Docker para Windows</a>","children":[],"payload":{"lines":"19,20"}},{"content":"<a href=\"https://www.docker.com/products/docker-desktop\">Docker para Mac</a>","children":[],"payload":{"lines":"20,21"}},{"content":"<a href=\"https://docs.docker.com/get-docker/\">Docker para Linux</a>","children":[],"payload":{"lines":"21,23"}}],"payload":{"lines":"18,23"}}],"payload":{"lines":"17,18"}},{"content":"Passo 2: Criar um Dockerfile","children":[{"content":"\n<p data-lines=\"24,25\">Um <strong>Dockerfile</strong> é um arquivo de configuração que contém um conjunto de instruções para criar uma imagem Docker.</p>\n<p data-lines=\"26,27\">Exemplo de um Dockerfile simples:</p>\n<pre><code class=\"language-Dockerfile\"><span class=\"hljs-comment\"># Use uma imagem base oficial do Node.js</span>\n<span class=\"hljs-keyword\">FROM</span> node:<span class=\"hljs-number\">14</span>\n\n<span class=\"hljs-comment\"># Defina o diretório de trabalho</span>\n<span class=\"hljs-keyword\">WORKDIR</span><span class=\"language-bash\"> /usr/src/app</span>\n\n<span class=\"hljs-comment\"># Copie o arquivo package.json para o contêiner</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> package*.json ./</span>\n\n<span class=\"hljs-comment\"># Instale as dependências</span>\n<span class=\"hljs-keyword\">RUN</span><span class=\"language-bash\"> npm install</span>\n\n<span class=\"hljs-comment\"># Copie o código da aplicação para o contêiner</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> . .</span>\n\n<span class=\"hljs-comment\"># Exponha a porta que a aplicação vai usar</span>\n<span class=\"hljs-keyword\">EXPOSE</span> <span class=\"hljs-number\">8080</span>\n\n<span class=\"hljs-comment\"># Comando para rodar a aplicação</span>\n<span class=\"hljs-keyword\">CMD</span><span class=\"language-bash\"> [<span class=\"hljs-string\">\"node\"</span>, <span class=\"hljs-string\">\"app.js\"</span>]</span>\n</code></pre>","children":[],"payload":{"lines":"24,49"}}],"payload":{"lines":"23,24"}}],"payload":{"lines":"15,16"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>

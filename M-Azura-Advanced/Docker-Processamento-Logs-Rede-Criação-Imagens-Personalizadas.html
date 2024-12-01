@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🐳 Mapa Mental: <strong>Docker - Processamento, Logs, Rede e Criação de Imagens Personalizadas</strong>","children":[{"content":"⚙️ <strong>Processamento, Logs e Rede com Docker</strong>","children":[{"content":"🧠 <strong>Limitando a Memória e CPU</strong>","children":[{"content":"<strong>Passo 1: Limitar a Memória e CPU de um Contêiner Docker</strong>","children":[{"content":"<strong>Crie ou inicie um contêiner</strong>: <code>docker run -dti --name meu-container ubuntu</code>","children":[],"payload":{"lines":"11,12"}},{"content":"<strong>Use o comando para limitar recursos</strong>: <code>docker run --memory 512m --cpus=\"1.0\" ubuntu</code>","children":[],"payload":{"lines":"12,13"}},{"content":"<strong>Verifique o uso de recursos</strong>: <code>docker stats</code>","children":[],"payload":{"lines":"13,15"}}],"payload":{"lines":"10,11"}}],"payload":{"lines":"4,5"}}],"payload":{"lines":"2,3"}},{"content":"📂 <strong>Definição e Criação de Dockerfile</strong>","children":[{"content":"📝 <strong>Primeiro Dockerfile</strong>","children":[{"content":"<strong>Objetivo:</strong> Criar um Dockerfile para gerar uma imagem personalizada.","children":[],"payload":{"lines":"20,21"}},{"content":"<strong>Comandos</strong>:","children":[{"content":"<code>docker run -dti --name ubuntu-python ubuntu</code>","children":[],"payload":{"lines":"22,23"}},{"content":"<code>docker exec -ti ubuntu-python bash</code>","children":[],"payload":{"lines":"23,24"}},{"content":"Dentro do contêiner, use: <code>apt update &amp;&amp; apt install python3</code>","children":[],"payload":{"lines":"24,26"}}],"payload":{"lines":"21,26"}}],"payload":{"lines":"19,20"}}],"payload":{"lines":"17,18"}},{"content":"🐍 <strong>Criando Imagens Personalizadas a partir de Imagens de Linguagens de Programação</strong>","children":[{"content":"🛠️ <strong>Personalizando Imagens com Python</strong>","children":[{"content":"<strong>Objetivo:</strong> Criar uma imagem personalizada com a linguagem Python.","children":[],"payload":{"lines":"31,32"}},{"content":"<strong>Comandos</strong>:","children":[{"content":"<strong>Buscar uma imagem no Docker Hub</strong>:","children":[{"content":"<code>docker pull python</code>","children":[],"payload":{"lines":"34,35"}}],"payload":{"lines":"33,35"}},{"content":"<strong>Verificar as imagens disponíveis</strong>:","children":[{"content":"<code>docker images</code>","children":[],"payload":{"lines":"36,37"}}],"payload":{"lines":"35,37"}},{"content":"<strong>Criar um diretório para armazenar arquivos</strong>:","children":[{"content":"<code>mkdir python</code>","children":[],"payload":{"lines":"38,39"}}],"payload":{"lines":"37,39"}},{"content":"<strong>Entrar no diretório</strong>:","children":[{"content":"<code>cd python</code>","children":[],"payload":{"lines":"40,41"}}],"payload":{"lines":"39,41"}},{"content":"<strong>Criar um Dockerfile com as configurações necessárias</strong>.","children":[],"payload":{"lines":"41,42"}},{"content":"<strong>Construir a imagem</strong>:","children":[{"content":"<code>docker build -t python-app .</code>","children":[],"payload":{"lines":"43,44"}}],"payload":{"lines":"42,44"}},{"content":"<strong>Executar a imagem personalizada</strong>:","children":[{"content":"<code>docker run -it python-app</code>","children":[],"payload":{"lines":"45,47"}}],"payload":{"lines":"44,47"}}],"payload":{"lines":"32,47"}}],"payload":{"lines":"30,31"}}],"payload":{"lines":"28,29"}},{"content":"📤 <strong>Realizando o Upload de Imagens para o HUB do Docker</strong>","children":[{"content":"🔼 <strong>Upload para o Docker Hub</strong>","children":[{"content":"<strong>Objetivo:</strong> Fazer o upload de sua imagem personalizada para o Docker Hub.","children":[],"payload":{"lines":"52,53"}},{"content":"<strong>Passos</strong>:","children":[{"content":"<strong>Login no Docker Hub</strong>:","children":[{"content":"<code>docker login</code>","children":[],"payload":{"lines":"55,56"}}],"payload":{"lines":"54,56"}},{"content":"<strong>Criar um repositório no Docker Hub</strong>:","children":[{"content":"Visite <a href=\"https://hub.docker.com/\">Docker Hub</a>, crie um repositório com o seu nome de usuário.","children":[],"payload":{"lines":"57,58"}}],"payload":{"lines":"56,58"}},{"content":"<strong>Construir a imagem com seu nome de usuário</strong>:","children":[{"content":"<code>docker build . -t nomedousuario/nomeimagem</code>","children":[],"payload":{"lines":"59,60"}}],"payload":{"lines":"58,60"}},{"content":"<strong>Fazer o push da imagem para o Hub</strong>:","children":[{"content":"<code>docker push nomedousuario/nomeimagem</code>","children":[],"payload":{"lines":"61,63"}}],"payload":{"lines":"60,63"}}],"payload":{"lines":"53,63"}}],"payload":{"lines":"51,52"}}],"payload":{"lines":"49,50"}},{"content":"📄 <strong>Comandos Utilizados</strong>","children":[{"content":"<code>docker pull &lt;imagem&gt;</code>: Baixa a imagem do Docker Hub.","children":[],"payload":{"lines":"67,68"}},{"content":"<code>docker build . -t &lt;nome_da_imagem&gt;</code>: Cria uma imagem personalizada.","children":[],"payload":{"lines":"68,69"}},{"content":"<code>docker run &lt;opções&gt; &lt;imagem&gt;</code>: Executa um contêiner baseado em uma imagem.","children":[],"payload":{"lines":"69,70"}},{"content":"<code>docker exec -ti &lt;nome_do_contêiner&gt; bash</code>: Acessa um contêiner em execução.","children":[],"payload":{"lines":"70,71"}},{"content":"<code>docker push &lt;nome_da_imagem&gt;</code>: Envia sua imagem personalizada para o Docker Hub.","children":[],"payload":{"lines":"71,72"}},{"content":"<code>docker login</code>: Efetua login no Docker Hub.","children":[],"payload":{"lines":"72,73"}},{"content":"<code>docker stats</code>: Exibe o uso de recursos de um contêiner.","children":[],"payload":{"lines":"73,75"}}],"payload":{"lines":"65,66"}},{"content":"🧳 <strong>Resumo Visual</strong>","children":[{"content":"","children":[{"content":"<strong>Processamento e Rede</strong>: Gerencie os recursos (memória/CPU) dos contêineres.","children":[],"payload":{"lines":"79,80"}},{"content":"<strong>Dockerfile</strong>: Escreva o Dockerfile para criar imagens personalizadas.","children":[],"payload":{"lines":"80,81"}},{"content":"<strong>Python</strong>: Use imagens base para criar aplicações com Python.","children":[],"payload":{"lines":"81,82"}},{"content":"<strong>Upload para Hub</strong>: Suba suas imagens personalizadas para o Docker Hub para compartilhar e reutilizar.","children":[],"payload":{"lines":"82,84"}}],"payload":{"lines":"79,84"}},{"content":"","children":[{"content":"<strong>Documentação</strong>: Consulte sempre a <a href=\"https://docs.docker.com/\">documentação oficial do Docker</a>.","children":[],"payload":{"lines":"87,88"}},{"content":"<strong>Prática</strong>: Realize os passos e explore os comandos para entender melhor os fluxos.","children":[],"payload":{"lines":"88,90"}}],"payload":{"lines":"87,90"}}],"payload":{"lines":"77,78"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>

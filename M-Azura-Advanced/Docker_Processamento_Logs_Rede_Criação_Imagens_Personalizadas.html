@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.8.0/styles/default.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🐳 Mapa Mental: <strong>Docker - Processamento, Logs, Rede e Criação de Imagens Personalizadas</strong>","children":[{"content":"⚙️ <strong>Processamento, Logs e Rede com Docker</strong>","children":[{"content":"<strong>Limitando a Memória e CPU</strong>","children":[{"content":"Comando <code>stress</code> e suas variações","children":[],"payload":{"lines":"4,5"}},{"content":"<strong>Passo 1: Limitar a Memória e CPU de um Contêiner Docker</strong>","children":[{"content":"<strong>Crie ou inicie um contêiner</strong> com limites de recursos","children":[],"payload":{"lines":"6,7"}},{"content":"Exemplo de comando:<pre><code class=\"language-bash\">docker run -d --name mycontainer --memory=<span class=\"hljs-string\">\"500m\"</span> --cpus=<span class=\"hljs-string\">\"1.0\"</span> ubuntu\n</code></pre>","children":[],"payload":{"lines":"7,11"}}],"payload":{"lines":"5,11"}},{"content":"<strong>Passo 2: Verificar os Recursos do Contêiner</strong>","children":[{"content":"Comando para verificar os limites de CPU e memória:<pre><code class=\"language-bash\">docker stats mycontainer\n</code></pre>","children":[],"payload":{"lines":"12,17"}}],"payload":{"lines":"11,17"}}],"payload":{"lines":"3,17"}}],"payload":{"lines":"2,3"}},{"content":"🐍 <strong>Criando Imagens Personalizadas a partir de Imagens de Linguagens de Programação</strong>","children":[{"content":"<strong>Comandos para Criar Imagens Personalizadas</strong>","children":[{"content":"Buscar no Docker Hub por uma imagem base","children":[{"content":"Exemplo: Imagem Python","children":[],"payload":{"lines":"22,23"}},{"content":"Comando para buscar a imagem:<pre><code class=\"language-bash\">docker pull python\n</code></pre>","children":[],"payload":{"lines":"23,27"}}],"payload":{"lines":"21,27"}},{"content":"<strong>Passos para Criar uma Imagem Personalizada</strong>","children":[{"content":"Criar um diretório para armazenar a imagem:<pre><code class=\"language-bash\"><span class=\"hljs-built_in\">mkdir</span> python\n<span class=\"hljs-built_in\">cd</span> python\n</code></pre>","children":[],"payload":{"lines":"28,33"}},{"content":"Criar o <code>Dockerfile</code> com a configuração desejada","children":[],"payload":{"lines":"33,34"}},{"content":"Construir a imagem com o comando:<pre><code class=\"language-bash\">docker build -t my-python-app .\n</code></pre>","children":[],"payload":{"lines":"34,38"}},{"content":"Verificar a imagem criada:<pre><code class=\"language-bash\">docker images\n</code></pre>","children":[],"payload":{"lines":"38,43"}}],"payload":{"lines":"27,43"}}],"payload":{"lines":"20,43"}}],"payload":{"lines":"19,20"}},{"content":"🔝 <strong>Realizando o Upload de Imagens para o Docker Hub</strong>","children":[{"content":"<strong>Comandos para Fazer o Upload</strong>","children":[{"content":"<strong>Passo 1: Login no Docker Hub</strong>","children":[{"content":"Comando para login:<pre><code class=\"language-bash\">docker login\n</code></pre>","children":[],"payload":{"lines":"48,52"}}],"payload":{"lines":"47,52"}},{"content":"<strong>Passo 2: Criar um Repositório no Docker Hub</strong>","children":[{"content":"Acesse o <a href=\"https://hub.docker.com\">Docker Hub</a> e crie um repositório com seu nome de usuário.","children":[],"payload":{"lines":"53,54"}}],"payload":{"lines":"52,54"}},{"content":"<strong>Passo 3: Gerar a Imagem com seu Nome de Usuário</strong>","children":[{"content":"Comando para construir a imagem:<pre><code class=\"language-bash\">docker build . -t nomedousuario/nome-da-imagem\n</code></pre>","children":[],"payload":{"lines":"55,59"}}],"payload":{"lines":"54,59"}},{"content":"<strong>Passo 4: Enviar a Imagem para o Docker Hub</strong>","children":[{"content":"Comando para enviar a imagem:<pre><code class=\"language-bash\">docker push nomedousuario/nome-da-imagem\n</code></pre>","children":[],"payload":{"lines":"60,65"}}],"payload":{"lines":"59,65"}}],"payload":{"lines":"46,65"}}],"payload":{"lines":"45,46"}},{"content":"🛠️ <strong>Trabalhando com Docker Compose</strong>","children":[{"content":"<strong>Introdução e Instalação do Docker Compose</strong>","children":[{"content":"<strong>O que é Docker Compose?</strong>","children":[{"content":"Docker Compose é uma ferramenta que facilita a definição e o gerenciamento de aplicativos com múltiplos contêineres. Com o Compose, você pode usar um arquivo YAML para definir todos os serviços que um aplicativo necessita e depois criar e gerenciar esses serviços com um único comando.","children":[],"payload":{"lines":"70,71"}}],"payload":{"lines":"69,71"}},{"content":"<strong>Passo 1: Instalar o Docker Compose</strong>","children":[{"content":"Para instalar o Docker Compose, use o seguinte comando:<pre><code class=\"language-bash\">sudo apt-get install docker-compose\n</code></pre>","children":[],"payload":{"lines":"72,76"}}],"payload":{"lines":"71,76"}},{"content":"<strong>Passo 2: Criar um Arquivo <code>docker-compose.yml</code></strong>","children":[{"content":"Defina os serviços e contêineres no arquivo <code>docker-compose.yml</code>. Exemplo básico:<pre><code class=\"language-yaml\"><span class=\"hljs-attr\">version:</span> <span class=\"hljs-string\">'3'</span>\n<span class=\"hljs-attr\">services:</span>\n  <span class=\"hljs-attr\">web:</span>\n    <span class=\"hljs-attr\">image:</span> <span class=\"hljs-string\">nginx</span>\n    <span class=\"hljs-attr\">ports:</span>\n      <span class=\"hljs-bullet\">-</span> <span class=\"hljs-string\">\"8080:80\"</span>\n  <span class=\"hljs-attr\">db:</span>\n    <span class=\"hljs-attr\">image:</span> <span class=\"hljs-string\">postgres</span>\n    <span class=\"hljs-attr\">environment:</span>\n      <span class=\"hljs-attr\">POSTGRES_PASSWORD:</span> <span class=\"hljs-string\">example</span>\n</code></pre>","children":[],"payload":{"lines":"77,90"}}],"payload":{"lines":"76,90"}},{"content":"<strong>Passo 3: Subir os Contêineres com Docker Compose</strong>","children":[{"content":"Execute o comando para iniciar os serviços:<pre><code class=\"language-bash\">docker-compose up\n</code></pre>","children":[],"payload":{"lines":"91,96"}}],"payload":{"lines":"90,96"}}],"payload":{"lines":"68,96"}}],"payload":{"lines":"67,68"}},{"content":"🐳 <strong>Outros Tópicos Importantes</strong>","children":[{"content":"<strong>Criando e Definindo Dockerfile</strong>","children":[{"content":"<strong>Primeiro Dockerfile</strong>","children":[{"content":"Exemplo para criar uma imagem personalizada:<pre><code class=\"language-bash\">docker run -dti --name ubuntu-python ubuntu\ndocker <span class=\"hljs-built_in\">exec</span> -ti ubuntu-python bash\napt update\napt install python3\n</code></pre>","children":[],"payload":{"lines":"101,108"}}],"payload":{"lines":"100,108"}}],"payload":{"lines":"99,108"}},{"content":"<strong>Trabalhando com Containers e Volumes</strong>","children":[{"content":"Montar volumes no Docker para persistência de dados","children":[],"payload":{"lines":"109,110"}},{"content":"Comando para montar um volume:<pre><code class=\"language-bash\">docker run -v /meu/volume:/container/volume mycontainer\n</code></pre>","children":[],"payload":{"lines":"110,114"}}],"payload":{"lines":"108,114"}}],"payload":{"lines":"98,99"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>

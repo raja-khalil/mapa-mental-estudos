@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.8.0/styles/default.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🐳 Primeiros Passos com o Docker","children":[{"content":"⬇️ Realizando o Download de Imagem","children":[{"content":"🖼️ Selecionando a Imagem","children":[{"content":"Após acessar o Docker Hub, escolha a imagem desejada para o seu projeto. Por exemplo, você pode procurar pela imagem <code>hello-world</code> para testar o Docker.","children":[],"payload":{"lines":"8,10"}}],"payload":{"lines":"7,8"}}],"payload":{"lines":"2,3"}},{"content":"💻 Comandos Básicos do Docker","children":[{"content":"\n<p data-lines=\"12,13\"><strong>Baixando a Imagem</strong></p>","children":[{"content":"Use o comando <code>docker pull</code> para baixar a imagem escolhida. Exemplo:<pre><code class=\"language-bash\">docker pull hello-world\n</code></pre>","children":[],"payload":{"lines":"13,17"}},{"content":"Isso fará o download da imagem <code>hello-world</code>, que é uma imagem simples para testar se o Docker está funcionando corretamente.","children":[],"payload":{"lines":"17,19"}}],"payload":{"lines":"12,19"}},{"content":"\n<p data-lines=\"19,20\"><strong>Verificando as Imagens Locais</strong></p>","children":[{"content":"Após o download, você pode listar todas as imagens baixadas com o comando:<pre><code class=\"language-bash\">docker images\n</code></pre>","children":[],"payload":{"lines":"20,24"}},{"content":"Isso exibirá uma lista das imagens disponíveis localmente no seu sistema.","children":[],"payload":{"lines":"24,26"}}],"payload":{"lines":"19,26"}},{"content":"\n<p data-lines=\"26,27\"><strong>Executando a Imagem</strong></p>","children":[{"content":"Para rodar uma aplicação dentro de um contêiner, use o comando <code>docker run</code>, seguido pelo nome da imagem. Exemplo:<pre><code class=\"language-bash\">docker run hello-world\n</code></pre>","children":[],"payload":{"lines":"27,31"}},{"content":"Este comando cria e executa um contêiner com a imagem <code>hello-world</code>. Se tudo estiver configurado corretamente, o Docker irá exibir uma mensagem de sucesso, confirmando que a instalação foi bem-sucedida.","children":[],"payload":{"lines":"31,33"}}],"payload":{"lines":"26,33"}}],"payload":{"lines":"10,11"}},{"content":"🚀 Conclusão","children":[{"content":"Com esses primeiros passos, você começou a trabalhar com Docker e pode agora explorar outras imagens, criar contêineres personalizados e integrar o Docker ao seu fluxo de desenvolvimento.","children":[],"payload":{"lines":"34,35"}}],"payload":{"lines":"33,34"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
