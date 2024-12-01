@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Projeto Prático com IA","children":[{"content":"Criando um Ebook com ChatGPT e MidJourney","children":[{"content":"📚 <strong>Ebook com ChatGPT</strong>: Como gerar conteúdo escrito para seu ebook usando IA.","children":[],"payload":{"lines":"3,4"}},{"content":"🎨 <strong>Design com MidJourney</strong>: Criando imagens e capas personalizadas para o ebook com IA generativa.","children":[],"payload":{"lines":"4,6"}}],"payload":{"lines":"2,3"}},{"content":"Criando Podcast com IAs Generativas","children":[{"content":"🎙 <strong>Geração de Áudio com IA</strong>: Usando IAs para criar roteiros e até vozes para o podcast.","children":[],"payload":{"lines":"7,8"}},{"content":"✨ <strong>Ferramentas de Produção</strong>: Como usar IA para editar, mixar e melhorar a qualidade do áudio.","children":[],"payload":{"lines":"8,10"}}],"payload":{"lines":"6,7"}},{"content":"Como Organizar Sua Vida Financeira com Planilhas Inteligentes de IA","children":[{"content":"💰 <strong>Planejamento Financeiro com IA</strong>: Usando IA para criar planilhas inteligentes que ajudam no controle de orçamento, investimentos e metas financeiras.","children":[],"payload":{"lines":"11,12"}},{"content":"📊 <strong>Automação e Análise de Dados</strong>: Como otimizar a análise financeira com fórmulas e automações baseadas em IA.","children":[],"payload":{"lines":"12,13"}}],"payload":{"lines":"10,11"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
