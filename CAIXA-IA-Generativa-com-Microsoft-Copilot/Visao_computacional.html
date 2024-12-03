@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌐 Visão Computacional","children":[{"content":"🧠 Introdução","children":[{"content":"Como os computadores “enxergam” o mundo ao seu redor? ➡️ Visão computacional.","children":[],"payload":{"lines":"3,5"}}],"payload":{"lines":"2,3"}},{"content":"👁️ Detecção e Reconhecimento Facial com Deep Learning","children":[{"content":"Algoritmos de deep learning para identificar rostos em imagens ou vídeos.","children":[],"payload":{"lines":"6,7"}},{"content":"Redes neurais treinadas para reconhecer padrões faciais únicos.","children":[],"payload":{"lines":"7,9"}}],"payload":{"lines":"5,6"}},{"content":"📦 Detecção de Objetos e Classificação","children":[{"content":"Redes como YOLO (You Only Look Once).","children":[{"content":"⚡ Alta eficiência.","children":[],"payload":{"lines":"11,12"}},{"content":"🖼️ Varreduras rápidas e precisas em imagens.","children":[],"payload":{"lines":"12,14"}}],"payload":{"lines":"10,14"}}],"payload":{"lines":"9,10"}},{"content":"😀 Extração de Features da Face Humana","children":[{"content":"Características específicas (ex.: distância entre os olhos, forma do nariz).","children":[],"payload":{"lines":"15,16"}},{"content":"Usadas para verificação de identidade e análise de emoções.","children":[],"payload":{"lines":"16,18"}}],"payload":{"lines":"14,15"}},{"content":"🛠️ Playground TensorFlow e Estrutura de Redes de Deep Learning","children":[{"content":"Facilita a criação e treinamento de redes neurais profundas.","children":[],"payload":{"lines":"19,20"}},{"content":"🏗️ Diversas camadas empilhadas para aprender representações hierárquicas.","children":[],"payload":{"lines":"20,21"}},{"content":"Permite a extração automática de features.","children":[],"payload":{"lines":"21,23"}}],"payload":{"lines":"18,19"}},{"content":"📊 Criação de um DataSet","children":[{"content":"Coleta, rotulação e pré-processamento de uma grande quantidade de dados de imagem.","children":[],"payload":{"lines":"24,26"}}],"payload":{"lines":"23,24"}},{"content":"🛰️ Redes para Rastreamento de Objetos","children":[{"content":"Interpretam imagens e geram conhecimento para decisões.","children":[],"payload":{"lines":"27,28"}},{"content":"🚗 Rastreamento de obstáculos em tempo real.","children":[],"payload":{"lines":"28,29"}},{"content":"📈 Alta taxa de quadros por segundo (FPS).","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"26,27"}},{"content":"📌 Técnicas de Segmentação e Redes YOLO Sort","children":[{"content":"Dividem uma imagem em partes significativas para análise.","children":[],"payload":{"lines":"32,33"}},{"content":"🧩 Combinam detecção e rastreamento de objetos ao longo do tempo.","children":[],"payload":{"lines":"33,35"}}],"payload":{"lines":"31,32"}},{"content":"🚗 Redes de Rastreamento na Prática","children":[{"content":"Uso em veículos autônomos, sistemas de vigilância e mais.","children":[],"payload":{"lines":"36,37"}},{"content":"📱 Deep learning e LSTM para lidar com sequências temporais.","children":[],"payload":{"lines":"37,38"}},{"content":"📉 Oferecem detecção precisa em dispositivos de baixo custo (ex.: smartphones).","children":[],"payload":{"lines":"38,39"}}],"payload":{"lines":"35,36"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
