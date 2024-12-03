@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🧠 Processamento de Linguagem Natural (PLN)","children":[{"content":"🌐 Analise de Linguagem Natural por Meio de PLN","children":[{"content":"📘 Mas o que é PLN?","children":[{"content":"Processamento de Linguagem Natural (PLN) é uma vertente da inteligência artificial que ajuda computadores a entender, interpretar e manipular a linguagem humana.","children":[],"payload":{"lines":"6,7"}},{"content":"<strong>Aplicações:</strong>","children":[{"content":"Sistema de reconhecimento e comando por voz","children":[],"payload":{"lines":"8,9"}},{"content":"Sistema de recomendação, comando por voz, chatbots","children":[],"payload":{"lines":"9,11"}}],"payload":{"lines":"7,11"}}],"payload":{"lines":"5,6"}},{"content":"🧩 Níveis de Processamento","children":[{"content":"<strong>Morphologia</strong>","children":[],"payload":{"lines":"12,13"}},{"content":"<strong>Sintaxe</strong>","children":[],"payload":{"lines":"13,14"}},{"content":"<strong>Semântica</strong>","children":[],"payload":{"lines":"14,15"}},{"content":"<strong>Pragmática</strong>","children":[{"content":"Pragmática é o ramo da linguística que estuda a linguagem no contexto de seu uso na comunicação.","children":[],"payload":{"lines":"16,17"}},{"content":"Relacionado com a análise detalhada da composição, derivação, flexão das palavras e seus processos de formação.","children":[],"payload":{"lines":"17,19"}}],"payload":{"lines":"15,19"}}],"payload":{"lines":"11,12"}}],"payload":{"lines":"2,3"}},{"content":"🧠 Deep Learning para PLN","children":[{"content":"🔍 Redes de Deep Learning","children":[{"content":"Os primeiros modelos de linguagem usavam arquitetura NN feedforward ou NN convolucional, mas elas não capturavam muito bem o contexto.","children":[{"content":"Contexto é como uma palavra ocorre em relação às palavras circundantes na frase.","children":[],"payload":{"lines":"30,31"}},{"content":"Para capturar o contexto, foram aplicados NNs recorrentes.","children":[],"payload":{"lines":"31,32"}},{"content":"O LSTM, uma variante do RNN, foi então usada para capturar o contexto de longa distância. O LSTM bidirecional (BiLSTM) melhora o LSTM ao observar as sequências de palavras nas direções para frente e para trás.","children":[],"payload":{"lines":"32,34"}}],"payload":{"lines":"29,34"}}],"payload":{"lines":"28,29"}},{"content":"🌍 Exemplos do Mundo Real em PLN","children":[{"content":"Google substituiu seu sistema de tradução baseado em frases pela Neural Machine Translation (NMT), reduzindo os erros de tradução em 60%. Ele usa uma rede LSTM profunda com 8 camadas de codificador e 8 de decodificador.","children":[],"payload":{"lines":"35,36"}},{"content":"A revolução na área de NLP com Deep Learning teve início em 2018 com o lançamento dos modelos de linguagem pré-treinados ELMo e ULMFiT. Mas, foi a proposta de uma nova arquitetura de redes neurais, denominada Transformer, baseada unicamente em mecanismos de atenção, que mudaria para sempre as pesquisas nessa área.","children":[{"content":"A arquitetura Transformer permitiu que o treinamento fosse realizado com um volume muito maior de dados do que era possível antes. Isso levou ao desenvolvimento de modelos de linguagem pré-treinados, que são previamente treinados e, posteriormente, são submetidos a um treinamento com ajuste fino (fine-tuning) nas tarefas específicas de linguagem.","children":[],"payload":{"lines":"37,39"}}],"payload":{"lines":"36,39"}}],"payload":{"lines":"34,35"}},{"content":"📝 Mas como isso é possível?","children":[{"content":"Os word embeddings são representações vetoriais das palavras, que permitem capturar o contexto e relacionamento das palavras nos documentos, sem a necessidade de realizar engenharia de features com anotações exaustivas nas sentenças.","children":[],"payload":{"lines":"40,42"}}],"payload":{"lines":"39,40"}},{"content":"🌟 Marco Histórico","children":[{"content":"O momento ImageNet, em 2012, marcou o início de um enorme interesse de pesquisadores e empresas no mundo todo por Deep Learning.","children":[],"payload":{"lines":"43,44"}},{"content":"O ano de 2018 determinou o início da revolução na área de NLP com os modelos de linguagem pré-treinados, como ELMo, GPT e BERT, que produziram avanços significativos em várias tarefas de linguagem natural, tais como inferência, análise de sentimento e tradução de linguagem, em um curto espaço de tempo.","children":[],"payload":{"lines":"44,45"}}],"payload":{"lines":"42,43"}}],"payload":{"lines":"19,20"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
