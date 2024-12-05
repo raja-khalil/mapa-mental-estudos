@@ -1,0 +1,108 @@
+# **Criando um Ebook com ChatGPT & PowerPoint** 📝📚
+
+## **A receita para um ebook profissional** 🍽️💼
+- **Criando um título poderoso** 📖✨
+  - Usar técnicas de prompt como:
+    - **P.R.E.D.I.O.**
+    - **3R**
+    - **FTAE**
+
+- **Gerar imagens com IA** 🖼️🤖
+  - **Midjourney**
+  - **Leonardo IA**
+
+- **Para montar o E-book** 🛠️💻
+  - **PowerPoint**:
+    - No **Exibir** marque:
+      - **Réguas** 📏
+      - **Linhas de grade** 📐
+      - **Guias** 🗂️
+    - Ir para **Design**:
+      - **Tamanho do Slide**:
+        - **Tamanho personalizado**:
+          - **Retrato** 📑
+          - Escolha o **tamanho do papel** 🗒️
+    - **Para Capa**:
+      - Fazer **upload da imagem** 🖼️:
+        - **Centralizar** ➕
+        - **Inserir**:
+          - **Formas**:
+            - **Quadrado** no tamanho da página ▢
+            - **Enviar para trás** ⬇️
+            - Conteúdo da forma **sem contorno** ✏️
+            - **Preenchimento de forma** 🎨:
+              - **Mais cores**:
+                - **Selecionar a cor** 🖌️
+            - Existe uma opção de **efeito artístico** para trabalhar imagens 🖋️
+            - Existe a opção de **outros efeitos** ✨
+      - **Para fazer o título**:
+        - **Caixa de texto** 🗒️:
+          - **Baixar outras fontes** 🔤
+
+- **Diagramação** 📝🖋️
+  - Padrões estruturais como **designers** fariam 🎨:
+    - Títulos e fontes devem ser **tamanhos grandes** nos e-books pois serão consumidos via tela 🖥️
+    - De preferência **títulos curtos** 📌
+    - Sugestão usar fontes **múltiplos de 8 - regra dos 8 pontos** 🔢
+    - Seja **minimalista** nos textos, utilize pouco texto ou apenas o suficiente ✏️
+    - Ter **layout agradável** 🌟
+    - Fonte sugerida 📚:
+      - **Serifada**:
+        - Sugestão para corpo **tamanho 16** 🔠
+        - Padrão de **tamanho do título** 2 vezes maior que o conteúdo 🆙
+        - **Subtítulo menor** que título e maior que conteúdo 🔡
+          - Combinação de fontes:
+            - **Impact negrito** para título 🆘
+            - Subtítulo **Calibre Light** ✏️
+            - Calibre para conteúdo 🔠
+    - Para gerar o **Lorem Ipsum** no PowerPoint 📝:
+      - Colocar “=1” para gerar o texto:
+        - Onde o número é a quantidade de parágrafos que vai ter o texto 🗒️
+    - **Modelos de Layout de eBooks** 📚:
+      - **Dois tipos de páginas** 📄:
+        - Tipo de conteúdos 📚:
+          - Com cara de **livros**, tomar cuidado para não carregar de texto e tamanho para não ficar pequeno 📖
+          - Outro conteúdo é se **intencional no produto digital** 📱:
+            - Usar talvez conteúdo parecido com os de redes sociais, posts de redes sociais 📲
+        - **Capas e capítulos**:
+          - Sempre buscar ser o mais **minimalista possível** ✏️:
+            - Usar a **forma para fazer o fundo** 🖍️
+            - O título vai ter o nome do capítulo sempre maior (sugestão de tamanho 88) 🆙
+            - Procure usar **cores padrão** 🎨:
+              - **Identidade visual** 🖌️
+
+- **Gerando conteúdo** 📝
+  - No **ChatGPT** use a técnica **FTAE**:
+    - Explique sempre de maneira **simples** 🗣️
+    - Deixe o texto **enxuto** 📝
+    - Sempre traga **exemplos em contextos reais** 🗂️
+    - Deixe um **título sugestivo** por tópico 📌
+  - **Como compartilhar código de maneira elegante**:
+    - **Ferramentas online** 🌐:
+      - **Snappify**
+      - **Showcode**
+      - **Carbon**
+      - **Ray**
+    - **VS Code** 🖥️:
+      - **Polacode**
+      - **CodeSnap**
+
+- **Finalizando Layout** 🖊️
+  - **Número da página** 📄:
+    - Inserir:
+      - **Cabeçalho e rodapé** 📝:
+        - Marcar **número de página** 🔢
+        - Pode escrever no **rodapé** 🖋️
+    - **Elemento separador** ➖
+    - **Link clicável** 🔗:
+      - No texto 📄:
+        - Botão direito:
+          - **Link**:
+            - Colar o endereço 🌐
+  - **Criando um agradecimento** 📝
+
+- **Salvando em PDF** 🗂️:
+  - Salvar como tipo **PDF** 📄
+
+- **Divulgando** 📣:
+  - No **LinkedIn** compartilhe na postagem como **anexo de documento** que aceita PDF seu e-book com sua rede 🌐
