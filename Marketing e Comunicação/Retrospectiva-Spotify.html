@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🎵 Retrospectiva do Spotify","children":[{"content":"🎯 Estratégia de Marketing","children":[{"content":"\n<p data-lines=\"3,4\"><strong>Análise de Dados</strong> 📊</p>","children":[{"content":"Coleta de dados de consumo ao longo do ano 🗓️","children":[],"payload":{"lines":"4,5"}},{"content":"Transformação dos dados em retrospectiva personalizada 🔄","children":[],"payload":{"lines":"5,7"}}],"payload":{"lines":"3,7"}},{"content":"\n<p data-lines=\"7,8\"><strong>Engajamento nas Redes Sociais</strong> 📲</p>","children":[{"content":"Usuários compartilham seus resultados 🎉","children":[],"payload":{"lines":"8,9"}},{"content":"Aumento do alcance da marca ↗️","children":[],"payload":{"lines":"9,11"}}],"payload":{"lines":"7,11"}}],"payload":{"lines":"2,3"}},{"content":"💡 Benefícios para os Usuários","children":[{"content":"\n<p data-lines=\"12,13\"><strong>Sentimento de Orgulho</strong> 🌟</p>","children":[{"content":"Destaque dos artistas e músicas favoritas 🎤","children":[],"payload":{"lines":"13,14"}},{"content":"Criação de um senso de comunidade 👥","children":[],"payload":{"lines":"14,16"}}],"payload":{"lines":"12,16"}},{"content":"\n<p data-lines=\"16,17\"><strong>Reflexão Anual</strong> 📅</p>","children":[{"content":"Usuários refletem sobre o ano através de suas escolhas musicais 💭","children":[],"payload":{"lines":"17,19"}}],"payload":{"lines":"16,19"}}],"payload":{"lines":"11,12"}},{"content":"📈 Resultados para a Marca","children":[{"content":"\n<p data-lines=\"20,21\"><strong>Branding Gratuito</strong> 🆓</p>","children":[{"content":"Divulgação espontânea pelos usuários 🙌","children":[],"payload":{"lines":"21,23"}}],"payload":{"lines":"20,23"}},{"content":"\n<p data-lines=\"23,24\"><strong>Autoridade no Mercado</strong> 🏆</p>","children":[{"content":"Fortalecimento da presença de marca 💪","children":[],"payload":{"lines":"24,26"}}],"payload":{"lines":"23,26"}},{"content":"\n<p data-lines=\"26,27\"><strong>Baixo Investimento</strong> 💸</p>","children":[{"content":"Campanha de marketing eficaz com custos reduzidos 📉","children":[],"payload":{"lines":"27,29"}}],"payload":{"lines":"26,29"}}],"payload":{"lines":"19,20"}},{"content":"📌 Grande Lições","children":[{"content":"\n<p data-lines=\"30,31\"><strong>Uso Inteligente dos Dados</strong> 🧠</p>","children":[{"content":"Transformar dados em campanhas que envolvam o público 📣","children":[],"payload":{"lines":"31,33"}}],"payload":{"lines":"30,33"}},{"content":"\n<p data-lines=\"33,34\"><strong>Transformar Usuários em Defensores da Marca</strong> 🛡️</p>","children":[{"content":"Criar conexões emocionais com a marca ❤️","children":[],"payload":{"lines":"34,36"}}],"payload":{"lines":"33,36"}},{"content":"\n<p data-lines=\"36,37\"><strong>Exemplo de Sucesso no Marketing Digital</strong> 🚀</p>","children":[{"content":"Case que mostra a eficácia do marketing de conteúdo baseado em dados 🔍","children":[],"payload":{"lines":"37,39"}}],"payload":{"lines":"36,39"}}],"payload":{"lines":"29,30"}},{"content":"❓ Reflexão","children":[{"content":"<strong>Você está utilizando os dados da sua empresa de forma estratégica?</strong>","children":[],"payload":{"lines":"40,41"}},{"content":"<strong>O que pode aprender com o case do Spotify?</strong>","children":[],"payload":{"lines":"41,43"}}],"payload":{"lines":"39,40"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
