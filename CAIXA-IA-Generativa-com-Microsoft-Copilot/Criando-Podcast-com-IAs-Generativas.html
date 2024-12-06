@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Criando um Podcast com IAs Generativas","children":[{"content":"🧠 <strong>Definição do Nicho</strong>","children":[{"content":"Escolha um tema específico","children":[],"payload":{"lines":"5,6"}},{"content":"Explore subnichos para público segmentado","children":[],"payload":{"lines":"6,8"}}],"payload":{"lines":"4,5"}},{"content":"🎤 <strong>Podcast como Ferramenta de Autoridade</strong>","children":[{"content":"Estabelece autoridade no campo","children":[],"payload":{"lines":"9,10"}},{"content":"Constrói uma audiência fiel","children":[],"payload":{"lines":"10,12"}}],"payload":{"lines":"8,9"}},{"content":"🔧 <strong>O que é Prompt Engineering?</strong>","children":[{"content":"<strong>Objetivo</strong>: Criar comandos para IA","children":[],"payload":{"lines":"13,14"}},{"content":"<strong>Resultados</strong>: Respostas mais precisas e relevantes","children":[],"payload":{"lines":"14,16"}}],"payload":{"lines":"12,13"}},{"content":"✍️ <strong>Como Escrever Prompts Profissionais?</strong>","children":[{"content":"<strong>Especificidade</strong>: Seja claro e detalhado","children":[],"payload":{"lines":"17,18"}},{"content":"<strong>Contexto</strong>: Forneça informações adicionais","children":[],"payload":{"lines":"18,19"}},{"content":"<strong>Prática</strong>: Encoraje a aplicação prática","children":[],"payload":{"lines":"19,20"}},{"content":"<strong>Clareza</strong>: Mantenha a comunicação concisa","children":[],"payload":{"lines":"20,22"}}],"payload":{"lines":"16,17"}},{"content":"🚀 <strong>Conceitos Avançados de Prompts</strong>","children":[{"content":"<strong>Prompts Negativos</strong>: Especificar o que não deseja","children":[],"payload":{"lines":"23,24"}},{"content":"<strong>Passagem de Variáveis</strong>: Direcionar resultados","children":[],"payload":{"lines":"24,26"}}],"payload":{"lines":"22,23"}},{"content":"🌟 <strong>Criando um Título Poderoso</strong>","children":[{"content":"<strong>Técnica AIDA</strong>: Atenção, Interesse, Desejo, Ação","children":[],"payload":{"lines":"27,28"}},{"content":"<strong>Engajamento</strong>: Capturar interesse do público","children":[],"payload":{"lines":"28,30"}}],"payload":{"lines":"26,27"}},{"content":"📸 <strong>Imagem de Capa e Dicas de MidJourney</strong>","children":[{"content":"<strong>Geração de Imagens</strong>: Use IA para criar capas","children":[],"payload":{"lines":"31,32"}},{"content":"<strong>Prompts</strong>: Detalhar para obter imagens atrativas","children":[],"payload":{"lines":"32,34"}}],"payload":{"lines":"30,31"}},{"content":"📝 <strong>Criando um Roteiro com Variáveis</strong>","children":[{"content":"Estruturar de forma dinâmica","children":[],"payload":{"lines":"35,36"}},{"content":"Incluir segmentos variados","children":[],"payload":{"lines":"36,38"}}],"payload":{"lines":"34,35"}},{"content":"📡 <strong>Onde Publicar?</strong>","children":[{"content":"<img src=\"https://example.com/publicar-podcast.png\" alt=\"Publicar Podcast\">","children":[]}],"payload":{"lines":"38,39"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
