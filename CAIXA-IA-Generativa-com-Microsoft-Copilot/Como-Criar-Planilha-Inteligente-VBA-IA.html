@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Criação de Planilha Inteligente em VBA 🌟","children":[{"content":"Objetivo 🏆","children":[{"content":"Construir uma planilha de controle financeiro","children":[],"payload":{"lines":"3,4"}},{"content":"Utilizar VBA para automações","children":[],"payload":{"lines":"4,5"}},{"content":"Sem conhecimento prévio de VBA","children":[],"payload":{"lines":"5,7"}}],"payload":{"lines":"2,3"}},{"content":"Abas Criadas 🗂️","children":[{"content":"Transações","children":[],"payload":{"lines":"8,9"}},{"content":"Contas","children":[],"payload":{"lines":"9,10"}},{"content":"Membros da Família","children":[],"payload":{"lines":"10,11"}},{"content":"Tipos de Renda","children":[],"payload":{"lines":"11,12"}},{"content":"Lista Suspensa","children":[],"payload":{"lines":"12,13"}},{"content":"Dashboard","children":[],"payload":{"lines":"13,14"}},{"content":"Outras 4 Abas","children":[],"payload":{"lines":"14,16"}}],"payload":{"lines":"7,8"}},{"content":"Funcionalidades Implementadas 🚀","children":[{"content":"\n<p data-lines=\"17,18\"><strong>Formulário de Entrada de Dados</strong> 📋</p>","children":[{"content":"Criação com sub-rotina <code>CriarAbaFormTransacoes</code>","children":[],"payload":{"lines":"18,19"}},{"content":"Transferência de dados com <code>EnviarTransacao</code>","children":[],"payload":{"lines":"19,20"}},{"content":"Limpeza de campos com <code>LimparCamposTransacao</code>","children":[],"payload":{"lines":"20,22"}}],"payload":{"lines":"17,22"}},{"content":"\n<p data-lines=\"22,23\"><strong>Listas Suspensas</strong> 📑</p>","children":[{"content":"Facilitar entrada de dados","children":[],"payload":{"lines":"23,24"}},{"content":"Validação nas colunas:","children":[{"content":"Categoria","children":[],"payload":{"lines":"25,26"}},{"content":"ID Membro Família","children":[],"payload":{"lines":"26,27"}},{"content":"ID Tipo Renda","children":[],"payload":{"lines":"27,29"}}],"payload":{"lines":"24,29"}}],"payload":{"lines":"22,29"}},{"content":"\n<p data-lines=\"29,30\"><strong>Automação com VBA</strong> 🤖</p>","children":[{"content":"Formatação de colunas","children":[],"payload":{"lines":"30,31"}},{"content":"Inserção de dados","children":[],"payload":{"lines":"31,32"}},{"content":"Criação de gráficos","children":[],"payload":{"lines":"32,34"}}],"payload":{"lines":"29,34"}},{"content":"\n<p data-lines=\"34,35\"><strong>Dashboard</strong> 📊</p>","children":[{"content":"Gráficos dinâmicos","children":[],"payload":{"lines":"35,36"}},{"content":"Tabelas dinâmicas","children":[],"payload":{"lines":"36,37"}},{"content":"Visualização de dados financeiros","children":[],"payload":{"lines":"37,39"}}],"payload":{"lines":"34,39"}}],"payload":{"lines":"16,17"}},{"content":"Processo de Desenvolvimento 🚧","children":[{"content":"\n<p data-lines=\"40,41\"><strong>Criação da Aba Formulário</strong></p>","children":[{"content":"Configuração das listas suspensas","children":[],"payload":{"lines":"41,42"}},{"content":"Implementação de botões \"Enviar\" e \"Limpar\"","children":[],"payload":{"lines":"42,43"}},{"content":"Ajustes para limpar automaticamente após envio","children":[],"payload":{"lines":"43,45"}}],"payload":{"lines":"40,45"}},{"content":"\n<p data-lines=\"45,46\"><strong>Ajustes nas Listas Suspensas</strong></p>","children":[{"content":"Correção de referências","children":[],"payload":{"lines":"46,47"}},{"content":"Garantir precisão das listas","children":[],"payload":{"lines":"47,49"}}],"payload":{"lines":"45,49"}},{"content":"\n<p data-lines=\"49,50\"><strong>Transferência e Validação de Dados</strong></p>","children":[{"content":"Sub-rotinas consistentes","children":[],"payload":{"lines":"50,51"}},{"content":"Testes e ajustes para garantir inserção correta","children":[],"payload":{"lines":"51,53"}}],"payload":{"lines":"49,53"}},{"content":"\n<p data-lines=\"53,54\"><strong>Criação das Abas com Estrutura</strong></p>","children":[{"content":"Estrutura das abas em menos de 3 minutos","children":[],"payload":{"lines":"54,55"}},{"content":"Mais tempo gasto escrevendo o prompt (rs)","children":[],"payload":{"lines":"55,57"}}],"payload":{"lines":"53,57"}}],"payload":{"lines":"39,40"}},{"content":"Destaque para o Tempo ⏳","children":[{"content":"Estrutura das abas criada em menos de 3 minutos","children":[],"payload":{"lines":"58,59"}},{"content":"Montagem do prompt demorou mais tempo","children":[],"payload":{"lines":"59,61"}}],"payload":{"lines":"57,58"}},{"content":"Próximos Passos 🛠️","children":[{"content":"Refinar tabelas dinâmicas","children":[],"payload":{"lines":"62,63"}},{"content":"Melhorar gráficos do dashboard","children":[],"payload":{"lines":"63,64"}},{"content":"Realizar mais testes","children":[],"payload":{"lines":"64,66"}}],"payload":{"lines":"61,62"}},{"content":"Conclusão ✨","children":[{"content":"Sem conhecimento prévio de VBA, construímos uma planilha funcional e prática","children":[],"payload":{"lines":"67,68"}},{"content":"A IA, como o Microsoft Copilot, foi essencial para o sucesso","children":[],"payload":{"lines":"68,69"}},{"content":"O projeto está pronto para ser usado e melhorado","children":[],"payload":{"lines":"69,71"}}],"payload":{"lines":"66,67"}},{"content":"Dificuldades Superadas 💪","children":[{"content":"Ajustar listas suspensas corretamente","children":[],"payload":{"lines":"72,73"}},{"content":"Garantir referências precisas","children":[],"payload":{"lines":"73,74"}},{"content":"Inserção correta das informações","children":[],"payload":{"lines":"74,76"}}],"payload":{"lines":"71,72"}},{"content":"Conquistas 🏅","children":[{"content":"<img src=\"https://mindmap.png\" alt=\"Mind Map\">","children":[]}],"payload":{"lines":"76,77"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
