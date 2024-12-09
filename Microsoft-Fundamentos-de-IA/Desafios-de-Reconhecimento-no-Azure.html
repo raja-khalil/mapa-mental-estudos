@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Mapa Mental: Desafios de Reconhecimento no Azure: Passo a Passo Teórico","children":[{"content":"🌟 Introdução","children":[{"content":"❓ <em>Problema</em>: Crédito no Azure expirado","children":[],"payload":{"lines":"3,4"}},{"content":"🔍 <em>Objetivo</em>: Abordagem teórica dos exercícios","children":[],"payload":{"lines":"4,6"}}],"payload":{"lines":"2,3"}},{"content":"👤 Reconhecimento Facial","children":[{"content":"🚀 <strong>Criação do Serviço Cognitivo</strong>","children":[{"content":"📜 Acessar o portal do Azure","children":[],"payload":{"lines":"8,9"}},{"content":"🔑 Criar recurso de API de Reconhecimento Facial","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"7,10"}},{"content":"🔍 <strong>Obtenção da Chave e do Endpoint</strong>","children":[{"content":"🔒 Configurações para chave e endpoint","children":[],"payload":{"lines":"11,12"}}],"payload":{"lines":"10,12"}},{"content":"📤 <strong>Envio de Imagens para Análise</strong>","children":[{"content":"🛠️ Cliente HTTP (Postman/Python)","children":[],"payload":{"lines":"13,14"}},{"content":"📸 URL ou dados da imagem (base64)","children":[],"payload":{"lines":"14,15"}}],"payload":{"lines":"12,15"}},{"content":"📊 <strong>Interpretação dos Resultados</strong>","children":[{"content":"👁️ Informações sobre faces detectadas","children":[],"payload":{"lines":"16,17"}},{"content":"📅 Características (idade, emoção)","children":[],"payload":{"lines":"17,19"}}],"payload":{"lines":"15,19"}}],"payload":{"lines":"6,7"}},{"content":"📄 OCR (Reconhecimento Óptico de Caracteres)","children":[{"content":"🛠️ <strong>Configuração do Serviço de OCR</strong>","children":[{"content":"📜 Criar recurso de Serviço Cognitivo (OCR)","children":[],"payload":{"lines":"21,22"}},{"content":"🔑 Configurar serviço e obter chave e endpoint","children":[],"payload":{"lines":"22,23"}}],"payload":{"lines":"20,23"}},{"content":"📤 <strong>Envio de Documentos para Análise</strong>","children":[{"content":"🖼️ Imagens ou PDFs","children":[],"payload":{"lines":"24,25"}},{"content":"🛠️ Cliente HTTP para requisições POST","children":[],"payload":{"lines":"25,26"}}],"payload":{"lines":"23,26"}},{"content":"🔍 <strong>Processamento dos Resultados</strong>","children":[{"content":"✍️ Texto extraído das imagens ou PDFs","children":[],"payload":{"lines":"27,28"}},{"content":"🔍 Verificar precisão e uso","children":[],"payload":{"lines":"28,30"}}],"payload":{"lines":"26,30"}}],"payload":{"lines":"19,20"}},{"content":"🖼️ Reconhecimento de Elementos em Imagens","children":[{"content":"🛠️ <strong>Configuração do Serviço de Análise de Imagens</strong>","children":[{"content":"📜 Criar recurso de Análise de Imagens","children":[],"payload":{"lines":"32,33"}},{"content":"🔑 Configurar serviço e obter chave e endpoint","children":[],"payload":{"lines":"33,34"}}],"payload":{"lines":"31,34"}},{"content":"📤 <strong>Envio de Imagens para Análise</strong>","children":[{"content":"🖼️ Enviar imagens para API de Análise de Imagens","children":[],"payload":{"lines":"35,36"}},{"content":"🛠️ Cliente HTTP para requisições POST","children":[],"payload":{"lines":"36,37"}}],"payload":{"lines":"34,37"}},{"content":"📊 <strong>Interpretação dos Resultados</strong>","children":[{"content":"🏷️ Análise detalhada dos elementos","children":[],"payload":{"lines":"38,39"}},{"content":"📅 Identificação e classificação visual","children":[],"payload":{"lines":"39,41"}}],"payload":{"lines":"37,41"}}],"payload":{"lines":"30,31"}},{"content":"🏁 Conclusão","children":[{"content":"🎓 <strong>Conhecimento Teórico</strong>","children":[{"content":"📚 Preparação para futuras implementações","children":[],"payload":{"lines":"43,44"}},{"content":"💡 Aplicação em outros projetos","children":[],"payload":{"lines":"44,45"}}],"payload":{"lines":"42,45"}}],"payload":{"lines":"41,42"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
