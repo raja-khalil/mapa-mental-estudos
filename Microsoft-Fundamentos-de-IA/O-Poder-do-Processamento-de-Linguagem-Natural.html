@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Mapa Mental: Desvendando o Poder do Processamento de Linguagem Natural com Azure","children":[{"content":"\n<p data-lines=\"2,3\"><strong>Processamento de Linguagem Natural (PLN)</strong></p>","children":[{"content":"\n<p data-lines=\"3,4\"><strong>Definição</strong></p>","children":[{"content":"Campo da IA que permite que computadores entendam e interpretem a linguagem humana","children":[],"payload":{"lines":"4,6"}}],"payload":{"lines":"3,6"}},{"content":"\n<p data-lines=\"6,7\"><strong>Processamento de Texto</strong></p>","children":[{"content":"<strong>Tokenização</strong>","children":[{"content":"Divisão do texto em unidades menores","children":[],"payload":{"lines":"8,9"}}],"payload":{"lines":"7,9"}},{"content":"<strong>Modelos de Linguagem</strong>","children":[{"content":"Treinamento para reconhecer padrões","children":[],"payload":{"lines":"10,11"}},{"content":"Análise de Texto","children":[],"payload":{"lines":"11,12"}},{"content":"Análise de Sentimento","children":[],"payload":{"lines":"12,13"}},{"content":"Tradução de Linguagem","children":[],"payload":{"lines":"13,14"}},{"content":"Sumarização","children":[],"payload":{"lines":"14,15"}},{"content":"Conversa AI-Humano","children":[],"payload":{"lines":"15,17"}}],"payload":{"lines":"9,17"}}],"payload":{"lines":"6,17"}},{"content":"\n<p data-lines=\"17,18\"><strong>Aplicações no Azure</strong></p>","children":[{"content":"<strong>Análise de Sentimentos</strong>","children":[{"content":"Detectar o tom emocional de um texto","children":[],"payload":{"lines":"19,20"}}],"payload":{"lines":"18,20"}},{"content":"<strong>NER (Reconhecimento de Entidade Nomeada)</strong>","children":[{"content":"Identificação de elementos importantes no texto","children":[],"payload":{"lines":"21,22"}}],"payload":{"lines":"20,22"}},{"content":"<strong>Detecção de PII e PHI</strong>","children":[{"content":"Identificação de Informações Pessoais e de Saúde","children":[],"payload":{"lines":"23,24"}}],"payload":{"lines":"22,24"}},{"content":"<strong>Detecção de Idioma</strong>","children":[{"content":"Identificação automática do idioma do texto","children":[],"payload":{"lines":"25,26"}}],"payload":{"lines":"24,26"}},{"content":"<strong>Respostas a Perguntas</strong>","children":[{"content":"Respostas precisas e rápidas baseadas em grandes volumes de dados","children":[],"payload":{"lines":"27,29"}}],"payload":{"lines":"26,29"}}],"payload":{"lines":"17,29"}},{"content":"\n<p data-lines=\"29,30\"><strong>Processamento de Fala</strong></p>","children":[{"content":"<strong>Texto para Fala</strong>","children":[{"content":"Conversão de texto em voz","children":[],"payload":{"lines":"31,32"}}],"payload":{"lines":"30,32"}},{"content":"<strong>Fala para Texto</strong>","children":[{"content":"Conversão de fala em texto escrito","children":[],"payload":{"lines":"33,34"}}],"payload":{"lines":"32,34"}},{"content":"<strong>Tradução de Fala</strong>","children":[{"content":"Comunicação em tempo real entre diferentes idiomas","children":[],"payload":{"lines":"35,37"}}],"payload":{"lines":"34,37"}}],"payload":{"lines":"29,37"}},{"content":"\n<p data-lines=\"37,38\"><strong>Tradução</strong></p>","children":[{"content":"<strong>Tradução de Textos</strong>","children":[],"payload":{"lines":"38,39"}},{"content":"<strong>Tradução de Documentos</strong>","children":[],"payload":{"lines":"39,40"}},{"content":"<strong>Tradução Personalizada</strong>","children":[{"content":"Ajuste para necessidades específicas","children":[],"payload":{"lines":"41,43"}}],"payload":{"lines":"40,43"}}],"payload":{"lines":"37,43"}}],"payload":{"lines":"2,43"}},{"content":"\n<p data-lines=\"43,44\"><strong>Benefícios</strong></p>","children":[{"content":"Transformar a interação entre humanos e máquinas","children":[],"payload":{"lines":"44,45"}},{"content":"Aplicações variadas e crescentes","children":[],"payload":{"lines":"45,46"}},{"content":"Comunicação fluida e natural","children":[],"payload":{"lines":"46,48"}}],"payload":{"lines":"43,48"}},{"content":"\n<p data-lines=\"48,49\"><strong>Conclusão</strong></p>","children":[{"content":"Explicação clara e interesse pelas possibilidades do PLN","children":[],"payload":{"lines":"49,50"}}],"payload":{"lines":"48,50"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
