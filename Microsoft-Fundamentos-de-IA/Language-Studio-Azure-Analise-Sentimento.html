@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌟 <strong>Análise de Sentimentos com Language Studio no Azure AI</strong> 🌟","children":[{"content":"💡 <strong>Introdução</strong>","children":[{"content":"<strong>Análise de Sentimentos</strong>: Revoluciona interpretação de textos","children":[],"payload":{"lines":"2,3"}},{"content":"<strong>Language Studio do Azure AI</strong>: Ferramenta poderosa e acessível","children":[],"payload":{"lines":"3,5"}}],"payload":{"lines":"1,2"}},{"content":"📊 <strong>Análise de Texto e Perguntas</strong>","children":[{"content":"🔍 <strong>Exemplo de Análise de Texto</strong>","children":[{"content":"Frase: \"Passei férias maravilhosas na França\"","children":[{"content":"<strong>Idioma</strong>: Português 🇵🇹","children":[],"payload":{"lines":"8,9"}},{"content":"<strong>Sentimento</strong>: 0,88 (positivo) 😊","children":[],"payload":{"lines":"9,10"}},{"content":"<strong>Frase-chave</strong>: \"férias maravilhosas\" 🌴","children":[],"payload":{"lines":"10,11"}},{"content":"<strong>Entidade</strong>: França 🇫🇷","children":[],"payload":{"lines":"11,13"}}],"payload":{"lines":"7,13"}}],"payload":{"lines":"6,7"}},{"content":"❓ <strong>Respostas a Perguntas</strong>","children":[{"content":"<strong>Base de Conhecimento</strong>","children":[{"content":"Inserção manual de perguntas e respostas 📝","children":[],"payload":{"lines":"15,16"}},{"content":"Documentos de FAQ 📄","children":[],"payload":{"lines":"16,17"}},{"content":"Bate-papo integrado 💬","children":[],"payload":{"lines":"17,19"}}],"payload":{"lines":"14,19"}}],"payload":{"lines":"13,14"}}],"payload":{"lines":"5,6"}},{"content":"🤖 <strong>Serviços de Bot do Azure</strong>","children":[{"content":"<strong>Desenvolvimento e Gerenciamento de Bots</strong>","children":[{"content":"Plataforma na nuvem ☁️","children":[],"payload":{"lines":"21,22"}},{"content":"Integração com AI Language 🧠","children":[],"payload":{"lines":"22,23"}},{"content":"Conectividade multiplataforma 🌐","children":[],"payload":{"lines":"23,25"}}],"payload":{"lines":"20,25"}}],"payload":{"lines":"19,20"}},{"content":"🗣️ <strong>Compreensão da Linguagem Coloquial</strong>","children":[{"content":"🧩 <strong>Componentes Principais</strong>","children":[{"content":"Declaração 🗣️","children":[],"payload":{"lines":"27,28"}},{"content":"Entidade 🏷️","children":[],"payload":{"lines":"28,29"}},{"content":"Intenção 🎯","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"26,27"}},{"content":"🗣️ <strong>Reconhecimento e Síntese de Fala</strong>","children":[{"content":"Fala para texto 🎙️ -&gt; 📄","children":[],"payload":{"lines":"32,33"}},{"content":"Texto para fala 📄 -&gt; 🔊","children":[],"payload":{"lines":"33,35"}}],"payload":{"lines":"31,32"}}],"payload":{"lines":"25,26"}},{"content":"🗣️ <strong>Conhecendo o Speech Studio</strong>","children":[{"content":"<strong>Configuração Inicial</strong>","children":[{"content":"Criar novo recurso ⚙️","children":[],"payload":{"lines":"37,38"}},{"content":"Conversão de fala em texto em tempo real 🕒","children":[],"payload":{"lines":"38,39"}},{"content":"Seleção de idioma 🌍","children":[],"payload":{"lines":"39,41"}}],"payload":{"lines":"36,41"}}],"payload":{"lines":"35,36"}},{"content":"💻 <strong>Explorando o Language Studio</strong>","children":[{"content":"⚙️ <strong>Configuração de Recursos</strong>","children":[{"content":"IA + Machine Learning 🤖","children":[],"payload":{"lines":"43,44"}},{"content":"<strong>Language Service</strong>: Grupo de recursos, região, nome, nível de preço","children":[],"payload":{"lines":"44,46"}}],"payload":{"lines":"42,43"}},{"content":"🗃️ <strong>Funcionalidades</strong>","children":[{"content":"Transcrição pós-chamada 📞✍️","children":[],"payload":{"lines":"47,48"}},{"content":"Sumarização de informações 📚","children":[],"payload":{"lines":"48,49"}},{"content":"Tradução de documentos 🗂️🌐","children":[],"payload":{"lines":"49,51"}}],"payload":{"lines":"46,47"}},{"content":"📊 <strong>Exemplo Prático</strong>","children":[{"content":"Classificação de texto para sentimentos 😊😔","children":[],"payload":{"lines":"52,53"}},{"content":"Seleção de idioma do texto 🌐","children":[],"payload":{"lines":"53,54"}},{"content":"Execução da análise 🔄","children":[],"payload":{"lines":"54,56"}}],"payload":{"lines":"51,52"}}],"payload":{"lines":"41,42"}},{"content":"🌟 <strong>Conclusão</strong>","children":[{"content":"Potencial vasto do Azure AI e Language Studio","children":[],"payload":{"lines":"57,58"}},{"content":"Ferramentas sofisticadas e acessíveis","children":[],"payload":{"lines":"58,59"}},{"content":"<strong>Iniciantes e especialistas</strong>: Criação, inovação e transformação 📈","children":[],"payload":{"lines":"59,60"}}],"payload":{"lines":"56,57"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
