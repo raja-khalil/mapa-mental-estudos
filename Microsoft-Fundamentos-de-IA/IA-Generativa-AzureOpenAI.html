@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Explorando os Recursos de IA Generativa com Copilot e OpenAI 🧠🤖","children":[{"content":"IA Generativa Responsável 🌍","children":[{"content":"<strong>Identificar</strong> 🔍","children":[{"content":"Possíveis danos relevantes para a solução planejada","children":[],"payload":{"lines":"4,5"}}],"payload":{"lines":"3,5"}},{"content":"<strong>Medir</strong> 📏","children":[{"content":"Presença desses danos nas saídas geradas","children":[],"payload":{"lines":"6,7"}}],"payload":{"lines":"5,7"}},{"content":"<strong>Mitigar</strong> 🛠️","children":[{"content":"Minimizar a presença e o impacto dos danos","children":[],"payload":{"lines":"8,9"}}],"payload":{"lines":"7,9"}},{"content":"<strong>Operar</strong> 🚀","children":[{"content":"Definir e seguir um plano de implantação e preparação operacional","children":[],"payload":{"lines":"10,12"}}],"payload":{"lines":"9,12"}}],"payload":{"lines":"2,3"}},{"content":"Microsoft Copilot 📝","children":[{"content":"Integração com Microsoft 365 📚","children":[],"payload":{"lines":"13,14"}},{"content":"Sugestões contextuais e aumento da produtividade 📊","children":[],"payload":{"lines":"14,16"}}],"payload":{"lines":"12,13"}},{"content":"Possibilidades do Microsoft Learning 💡","children":[{"content":"Explore filtros de conteúdo no Azure OpenAI 🔍","children":[{"content":"<strong>Provisionar um recurso Azure OpenAI</strong> 🛠️","children":[{"content":"Entrar no Portal Azure 🌐","children":[],"payload":{"lines":"19,20"}},{"content":"Criar recursos Azure OpenAI ⚙️","children":[{"content":"Assinatura 📃","children":[],"payload":{"lines":"21,22"}},{"content":"Grupo de recursos 📁","children":[],"payload":{"lines":"22,23"}},{"content":"Região 🗺️","children":[],"payload":{"lines":"23,24"}},{"content":"Nome 🏷️","children":[],"payload":{"lines":"24,25"}},{"content":"Nível de preços 💸","children":[],"payload":{"lines":"25,26"}}],"payload":{"lines":"20,26"}},{"content":"Implantação de um modelo 🖥️","children":[],"payload":{"lines":"26,28"}}],"payload":{"lines":"18,28"}},{"content":"Filtros de conteúdo no Azure OpenAI garantem saídas apropriadas 🛡️","children":[],"payload":{"lines":"29,30"}}],"payload":{"lines":"17,18"}}],"payload":{"lines":"16,17"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
