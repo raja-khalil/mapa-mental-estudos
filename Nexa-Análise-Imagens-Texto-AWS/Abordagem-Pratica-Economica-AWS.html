@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Mapa Mental: Análise de Imagens e Texto com IA na AWS","children":[{"content":"\n<p data-lines=\"2,3\"><strong>Análise de Imagens e Texto com IA</strong></p>","children":[{"content":"Integração de IA","children":[{"content":"Custos da AWS","children":[{"content":"Observação da tabela de custos","children":[],"payload":{"lines":"5,6"}},{"content":"Subir e apagar instâncias não utilizadas","children":[],"payload":{"lines":"6,7"}}],"payload":{"lines":"4,7"}}],"payload":{"lines":"3,7"}},{"content":"Modelos de Cobrança dos Serviços AWS","children":[{"content":"Nível Gratuito da AWS","children":[{"content":"Três Categorias","children":[{"content":"Testes Gratuitos","children":[],"payload":{"lines":"10,11"}},{"content":"12 Meses Gratuitos","children":[],"payload":{"lines":"11,12"}},{"content":"Sempre Gratuitos","children":[],"payload":{"lines":"12,13"}}],"payload":{"lines":"9,13"}},{"content":"Informações dos serviços gratuitos","children":[{"content":"Site da AWS: <a href=\"https://aws.amazon.com/pt/free\">https://aws.amazon.com/pt/free</a>","children":[],"payload":{"lines":"14,15"}},{"content":"Principais categorias de produtos","children":[],"payload":{"lines":"15,16"}},{"content":"Opções de filtro específico","children":[],"payload":{"lines":"16,17"}},{"content":"Documentação oficial com área de precificação","children":[],"payload":{"lines":"17,18"}}],"payload":{"lines":"13,18"}}],"payload":{"lines":"8,18"}}],"payload":{"lines":"7,18"}},{"content":"Monitoramento de Uso do Nível Gratuito","children":[{"content":"Configuração de alertas de gastos","children":[{"content":"Página de Budgets da AWS","children":[{"content":"Template simplificado","children":[{"content":"Exemplo: Alerta quando exceder $0,01","children":[],"payload":{"lines":"22,23"}}],"payload":{"lines":"21,23"}},{"content":"Notificação por e-mail","children":[],"payload":{"lines":"23,24"}}],"payload":{"lines":"20,24"}}],"payload":{"lines":"19,24"}},{"content":"Suporte Humanizado","children":[{"content":"Suporte Center","children":[],"payload":{"lines":"25,26"}},{"content":"Acesso pelo símbolo de interrogação na página superior","children":[],"payload":{"lines":"26,28"}}],"payload":{"lines":"24,28"}}],"payload":{"lines":"18,28"}}],"payload":{"lines":"2,28"}},{"content":"\n<p data-lines=\"28,29\"><strong>Vantagens da AWS</strong></p>","children":[{"content":"Infraestrutura robusta e escalável","children":[],"payload":{"lines":"29,30"}},{"content":"Flexibilidade de pagamento","children":[],"payload":{"lines":"30,31"}},{"content":"Ampla gama de serviços de IA e análise de dados","children":[],"payload":{"lines":"31,33"}}],"payload":{"lines":"28,33"}},{"content":"\n<p data-lines=\"33,34\"><strong>Dicas Finais</strong></p>","children":[{"content":"Aproveitar ao máximo os serviços gratuitos","children":[],"payload":{"lines":"34,35"}},{"content":"Monitorar regularmente os custos","children":[],"payload":{"lines":"35,36"}},{"content":"Usar boas práticas de segurança e gestão de dados","children":[],"payload":{"lines":"36,38"}}],"payload":{"lines":"33,38"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
