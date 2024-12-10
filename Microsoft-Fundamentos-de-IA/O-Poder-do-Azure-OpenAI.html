@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🧠 Mapa Mental: Fundamentos do Serviço Azure OpenAI","children":[{"content":"","children":[{"content":"Solução de nuvem da Microsoft","children":[],"payload":{"lines":"5,6"}},{"content":"Implantação, personalização e hospedagem de modelos de linguagem grandes","children":[],"payload":{"lines":"6,7"}},{"content":"Funcionalidades:","children":[{"content":"Modelos de IA gerativa predefinidos","children":[],"payload":{"lines":"8,9"}},{"content":"Personalização","children":[],"payload":{"lines":"9,10"}},{"content":"Ferramentas para detectar e mitigar usos prejudiciais","children":[],"payload":{"lines":"10,11"}},{"content":"Segurança: RBAC e redes privadas","children":[],"payload":{"lines":"11,13"}}],"payload":{"lines":"7,13"}}],"payload":{"lines":"5,13"}},{"content":"","children":[{"content":"Estúdio de IA do Azure","children":[],"payload":{"lines":"15,16"}},{"content":"API REST","children":[],"payload":{"lines":"16,17"}},{"content":"SDKs com suporte","children":[],"payload":{"lines":"17,18"}},{"content":"CLI do Azure","children":[],"payload":{"lines":"18,20"}}],"payload":{"lines":"15,20"}},{"content":"","children":[{"content":"<strong>GPT-4</strong>:","children":[{"content":"Melhorias em relação ao GPT-3.5","children":[],"payload":{"lines":"23,24"}},{"content":"Compreende e gera linguagem e código naturais","children":[],"payload":{"lines":"24,25"}}],"payload":{"lines":"22,25"}},{"content":"<strong>GPT-3.5</strong>:","children":[{"content":"Evolução do GPT-3","children":[],"payload":{"lines":"26,27"}},{"content":"Compreende e gera linguagem e código naturais","children":[],"payload":{"lines":"27,28"}}],"payload":{"lines":"25,28"}},{"content":"<strong>Incorporação</strong>:","children":[{"content":"Converte texto em vetores numéricos","children":[],"payload":{"lines":"29,30"}},{"content":"Facilita similaridade de texto","children":[],"payload":{"lines":"30,31"}}],"payload":{"lines":"28,31"}},{"content":"<strong>DALL-E</strong>:","children":[{"content":"Gera imagens a partir de linguagem natural","children":[],"payload":{"lines":"32,33"}},{"content":"Edição e variações de imagens","children":[],"payload":{"lines":"33,35"}}],"payload":{"lines":"31,35"}}],"payload":{"lines":"22,35"}},{"content":"<strong>Estúdio Azure OpenAI</strong>:","children":[{"content":"Criação e implantação de modelos de IA","children":[],"payload":{"lines":"38,39"}},{"content":"Modelos: GPT-4, GPT-3.5, Incorporações, DALL-E","children":[],"payload":{"lines":"39,40"}},{"content":"<strong>Playgrounds</strong>:","children":[{"content":"Experimente modelos sem codificação","children":[],"payload":{"lines":"41,42"}},{"content":"Configure o comportamento do modelo","children":[],"payload":{"lines":"42,44"}}],"payload":{"lines":"40,44"}}],"payload":{"lines":"37,44"}},{"content":"","children":[{"content":"<strong>Linguagem Natural</strong>:","children":[{"content":"Modelos GPT compreendem e criam linguagem natural","children":[],"payload":{"lines":"47,48"}}],"payload":{"lines":"46,48"}},{"content":"<strong>Geração de Código</strong>:","children":[{"content":"Tradução de linguagem natural em código","children":[],"payload":{"lines":"49,50"}}],"payload":{"lines":"48,50"}},{"content":"<strong>Geração de Imagem</strong>:","children":[{"content":"Criação e edição de imagens com DALL-E","children":[],"payload":{"lines":"51,52"}},{"content":"Solicitação de estilos específicos","children":[],"payload":{"lines":"52,53"}},{"content":"Criação de variações a partir de uma imagem","children":[],"payload":{"lines":"53,54"}}],"payload":{"lines":"50,54"}}],"payload":{"lines":"46,54"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
