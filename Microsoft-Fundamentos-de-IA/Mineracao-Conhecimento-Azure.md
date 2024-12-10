@@ -1,0 +1,71 @@
+# 🧠 Mapa Mental: Inteligência de Documentos e Mineração de Conhecimento no Azure
+
+- **Inteligência de Documentos de IA no Azure**
+  - **Serviço de Inteligência de Documentos de IA do Azure**
+    - **OCR**
+      - Reconhecimento Óptico de Caracteres 📄
+    - **Análise de Documentos**
+      - Dados Estruturados 📊
+        - Representações de dados
+        - Regiões de interesse e relacionamentos
+      - Opções de Análise 🛠
+        - Análise gratuita e cobrada
+    - **Modelos**
+      - Pré-construídos 🏗️
+        - Faturas
+        - Recibos
+        - Identificações
+      - Personalizados 🔧
+        - Treine modelos com dados de amostra
+        - Identifique campos de interesse
+  - **Analisando Formulários**
+    - Serviço Document Intelligence 📝
+      - Extração de informações de formulários digitalizados
+      - Modelos pré-treinados
+      - Treinamento de modelos personalizados
+    - Estúdio de Inteligência de Documentos 🎨
+      - Abordagem sem código
+      - Criação de recursos de inteligência de documentos
+      - Habilitação do recurso no Document Intelligence Studio
+      - Experimentação com modelos
+
+- **Azure Cognitive Search: Utilizando AI Search**
+  - **Mineração de Conhecimento**
+    - O que é? ❓
+      - Encontrar insights em dados bloqueados 🔍
+    - **Plataforma de Mineração de Conhecimento**
+      - Azure Cognitive Search
+  - **Solução de Pesquisa Cognitiva do Azure**
+    - Ingestão de Dados 📥
+      - Azure Blob Storage
+      - Azure Data Lake Storage Gen 2
+      - Azure Table Storage
+    - Enriquecimento e Índice de IA ⚙️
+      - Compreensão profunda
+      - Visão, Processamento de Linguagem Natural
+    - Exploração 🔎
+      - Pesquisa em índices
+      - Visualizações de dados
+  - **Enriquecimento de IA**
+    - Conjunto de Habilidades 💡
+      - Reconhecimento de entidades
+      - Tradução de texto
+      - Avaliação de sentimento
+    - Produção de documentos enriquecidos
+      - Indexação e consumo de dados
+
+- **Desafio do Laboratório**
+  - Busca Cognitiva 🧩
+    - Portal Azure 🌐
+      - AI Search
+        - Grupo de Recursos
+        - Nome do Serviço
+        - Localização
+        - Nível de Preços
+      - Criação de recursos de IA
+        - Serviços de IA do Azure
+      - Conta de Armazenamento 📦
+        - Containers, File Shares, Queues, Tables
+
+🚀 Explore essas ferramentas e veja como elas podem revolucionar seu trabalho!
+
