@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"📊 Importância da Marca e Crescimento da Tecnologia de Nuvem e IA 🚀","children":[{"content":"🌟 Valor das Principais Marcas (2024) 💰","children":[{"content":"<strong>Apple</strong>: $489 bilhões 🍏","children":[],"payload":{"lines":"3,4"}},{"content":"<strong>Microsoft</strong>: $352 bilhões 🖥️","children":[],"payload":{"lines":"4,5"}},{"content":"<strong>Amazon</strong>: $298 bilhões 📦","children":[],"payload":{"lines":"5,6"}},{"content":"<strong>Google</strong>: $291 bilhões 🔍","children":[],"payload":{"lines":"6,7"}},{"content":"<strong>Samsung</strong>: $100 bilhões 📱","children":[],"payload":{"lines":"7,9"}}],"payload":{"lines":"2,3"}},{"content":"🌐 Importância do Ranking 📈","children":[{"content":"<strong>Identifica líderes de mercado</strong> 👑","children":[],"payload":{"lines":"10,11"}},{"content":"<strong>Indica tendências de mercado</strong> 📊","children":[],"payload":{"lines":"11,12"}},{"content":"<strong>Oportunidades de investimento</strong> 💵","children":[],"payload":{"lines":"12,14"}}],"payload":{"lines":"9,10"}},{"content":"💡 Gigantes da Tecnologia e Inovações 🌟","children":[{"content":"Apple 🍏","children":[{"content":"Produtos inovadores 📱","children":[],"payload":{"lines":"16,17"}},{"content":"Investimento em IA 🧠","children":[],"payload":{"lines":"17,18"}},{"content":"Siri e Apple Watch ⌚","children":[],"payload":{"lines":"18,20"}}],"payload":{"lines":"15,16"}},{"content":"Microsoft 🖥️","children":[{"content":"Azure e Microsoft 365 ☁️","children":[],"payload":{"lines":"21,22"}},{"content":"Soluções confiáveis e integradas 🔒","children":[],"payload":{"lines":"22,24"}}],"payload":{"lines":"20,21"}},{"content":"Amazon 📦","children":[{"content":"AWS essencial para empresas globais 🌍","children":[],"payload":{"lines":"25,26"}},{"content":"IA para experiência do cliente e logística 🚚","children":[],"payload":{"lines":"26,28"}}],"payload":{"lines":"24,25"}},{"content":"Google 🔍","children":[{"content":"IA em pesquisa e desenvolvimento 🧪","children":[],"payload":{"lines":"29,30"}},{"content":"Google Assistant e Google Cloud ☁️","children":[],"payload":{"lines":"30,32"}}],"payload":{"lines":"28,29"}},{"content":"Samsung 📱","children":[{"content":"Dispositivos inteligentes 📲","children":[],"payload":{"lines":"33,34"}},{"content":"Inovação em smartphones e TVs 📺","children":[],"payload":{"lines":"34,36"}}],"payload":{"lines":"32,33"}}],"payload":{"lines":"14,15"}},{"content":"🔮 Futuro das Marcas e Tecnologia 🚀","children":[{"content":"<strong>Inovação Contínua</strong> 🆕","children":[],"payload":{"lines":"37,38"}},{"content":"<strong>Eficiência e Produtividade</strong> ⏱️","children":[],"payload":{"lines":"38,39"}},{"content":"<strong>Experiência do Usuário</strong> 😊","children":[],"payload":{"lines":"39,40"}},{"content":"<strong>Novas Oportunidades de Mercado</strong> 🛠️","children":[],"payload":{"lines":"40,42"}}],"payload":{"lines":"36,37"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
