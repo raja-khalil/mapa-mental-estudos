@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"<strong>Amazon Transcribe</strong> 📝","children":[{"content":"<strong>Tutoriais Úteis</strong> 🎓","children":[{"content":"Análise de Fala 🗣️","children":[],"payload":{"lines":"2,3"}},{"content":"Legendas de Vídeos 🎬","children":[],"payload":{"lines":"3,4"}},{"content":"Transcrição Médica 🏥","children":[],"payload":{"lines":"4,5"}}],"payload":{"lines":"1,5"}},{"content":"<strong>Serviços</strong> 🔧","children":[{"content":"<strong>Transcrição em Tempo Real</strong> ⏱️","children":[{"content":"Transcrição instantânea de falas para reuniões, webinars, e conferências.","children":[],"payload":{"lines":"7,8"}}],"payload":{"lines":"6,8"}},{"content":"<strong>Jobs de Transcrição</strong> 📂","children":[{"content":"Upload de arquivos de áudio/vídeo para transcrição automática.","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"8,10"}},{"content":"<strong>Modelo de Linguagem Personalizado</strong> 🧠","children":[{"content":"Treine o modelo com exemplos específicos do seu domínio.","children":[],"payload":{"lines":"11,12"}}],"payload":{"lines":"10,12"}},{"content":"<strong>Vocabulário Customizado</strong> 📚","children":[{"content":"Adicione termos específicos ou siglas ao vocabulário padrão.","children":[],"payload":{"lines":"13,14"}}],"payload":{"lines":"12,14"}},{"content":"<strong>Filtragem de Vocabulário</strong> 🛑","children":[{"content":"Filtragem de palavras indesejadas nas transcrições.","children":[],"payload":{"lines":"15,16"}}],"payload":{"lines":"14,16"}},{"content":"<strong>Amazon Transcribe Call Analytics</strong> 📞","children":[{"content":"Análise de chamadas telefônicas, identificação de sentimentos e insights.","children":[],"payload":{"lines":"17,18"}}],"payload":{"lines":"16,18"}},{"content":"<strong>Amazon Transcribe Medical</strong> 🏥","children":[{"content":"Transcrição precisa de ditados médicos.","children":[],"payload":{"lines":"19,20"}}],"payload":{"lines":"18,20"}},{"content":"<strong>AWS HealthScribe</strong> 🚑","children":[{"content":"Solução completa para a transcrição de consultas médicas.","children":[],"payload":{"lines":"21,22"}}],"payload":{"lines":"20,22"}}],"payload":{"lines":"5,22"}},{"content":"<strong>Curiosidades e Dados Relevantes</strong> 📊","children":[{"content":"Primeiro email marketing em 1971 📧","children":[],"payload":{"lines":"23,24"}},{"content":"70% das pessoas preferem conhecer produtos através de conteúdo ao invés de anúncios tradicionais.","children":[],"payload":{"lines":"24,25"}}],"payload":{"lines":"22,25"}},{"content":"<strong>Dicas Práticas</strong> 💡","children":[{"content":"Comece pequeno, com uma ou duas ferramentas de automação.","children":[],"payload":{"lines":"26,27"}},{"content":"Foque nas métricas que realmente importam para o seu negócio.","children":[],"payload":{"lines":"27,28"}},{"content":"Experimente com IA e chatbots para um atendimento mais eficiente.","children":[],"payload":{"lines":"28,29"}}],"payload":{"lines":"25,29"}}],"payload":{"lines":"0,29"}},{})</script>
+</body>
+</html>
