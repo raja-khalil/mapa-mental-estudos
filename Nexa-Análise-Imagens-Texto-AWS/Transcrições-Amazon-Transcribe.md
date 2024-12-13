@@ -1,0 +1,29 @@
+- **Amazon Transcribe** 📝
+    - **Tutoriais Úteis** 🎓
+        - Análise de Fala 🗣️
+        - Legendas de Vídeos 🎬
+        - Transcrição Médica 🏥
+    - **Serviços** 🔧
+        - **Transcrição em Tempo Real** ⏱️
+            - Transcrição instantânea de falas para reuniões, webinars, e conferências.
+        - **Jobs de Transcrição** 📂
+            - Upload de arquivos de áudio/vídeo para transcrição automática.
+        - **Modelo de Linguagem Personalizado** 🧠
+            - Treine o modelo com exemplos específicos do seu domínio.
+        - **Vocabulário Customizado** 📚
+            - Adicione termos específicos ou siglas ao vocabulário padrão.
+        - **Filtragem de Vocabulário** 🛑
+            - Filtragem de palavras indesejadas nas transcrições.
+        - **Amazon Transcribe Call Analytics** 📞
+            - Análise de chamadas telefônicas, identificação de sentimentos e insights.
+        - **Amazon Transcribe Medical** 🏥
+            - Transcrição precisa de ditados médicos.
+        - **AWS HealthScribe** 🚑
+            - Solução completa para a transcrição de consultas médicas.
+    - **Curiosidades e Dados Relevantes** 📊
+        - Primeiro email marketing em 1971 📧
+        - 70% das pessoas preferem conhecer produtos através de conteúdo ao invés de anúncios tradicionais.
+    - **Dicas Práticas** 💡
+        - Comece pequeno, com uma ou duas ferramentas de automação.
+        - Foque nas métricas que realmente importam para o seu negócio.
+        - Experimente com IA e chatbots para um atendimento mais eficiente.

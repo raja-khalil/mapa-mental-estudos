@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Microsoft Copilot Studio","children":[{"content":"<strong>Objetivo Geral</strong> 🎯","children":[{"content":"Explicar o que é o Copilot Studio","children":[],"payload":{"lines":"2,3"}},{"content":"Ensinar a construir um copiloto para o site da CAIXA e Manual de Segurança","children":[],"payload":{"lines":"3,4"}}],"payload":{"lines":"1,4"}},{"content":"<strong>Plataforma Low Code</strong> 💻","children":[{"content":"Microsoft Power Platform","children":[],"payload":{"lines":"5,6"}}],"payload":{"lines":"4,6"}},{"content":"<strong>Pré-requisitos</strong> ✅","children":[{"content":"E-mail corporativo ou de estudante 📧","children":[],"payload":{"lines":"7,8"}},{"content":"Alternativa: Microsoft Developer Program 💼","children":[{"content":"Acesso a 25 e-mails corporativos","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"8,10"}}],"payload":{"lines":"6,10"}},{"content":"<strong>Visão Geral</strong> 👀","children":[{"content":"O que é um Copilot? 🤖","children":[{"content":"IA generativa para tarefas complexas 🧩","children":[],"payload":{"lines":"12,13"}}],"payload":{"lines":"11,13"}},{"content":"Power Platform ⚡","children":[{"content":"<strong>Power Apps</strong>: Desenvolvimento de Aplicativos 📱","children":[],"payload":{"lines":"14,15"}},{"content":"<strong>Power Automate</strong>: Automação de Processos ⚙️","children":[],"payload":{"lines":"15,16"}},{"content":"<strong>Power BI</strong>: Análise de Negócios 📊","children":[],"payload":{"lines":"16,17"}},{"content":"<strong>Copilot Studio</strong>: Copilotos Inteligentes 💡","children":[],"payload":{"lines":"17,18"}},{"content":"<strong>Power Pages</strong>: Sites Externos 🌐","children":[],"payload":{"lines":"18,19"}}],"payload":{"lines":"13,19"}},{"content":"Infraestrutura 🔧","children":[{"content":"Conectores de Dados 🔌","children":[],"payload":{"lines":"20,21"}},{"content":"AI Builder 🤖","children":[],"payload":{"lines":"21,22"}},{"content":"Microsoft Dataverse 🗄️","children":[],"payload":{"lines":"22,23"}},{"content":"Power Fx (Linguagem de Programação) 📝","children":[],"payload":{"lines":"23,24"}},{"content":"Ambientes Gerenciados 🏢","children":[],"payload":{"lines":"24,25"}}],"payload":{"lines":"19,25"}}],"payload":{"lines":"10,25"}},{"content":"<strong>Microsoft Copilot Studio</strong> 🌟","children":[{"content":"Produto de IA Conversacional 🗣️","children":[],"payload":{"lines":"26,27"}},{"content":"Arquitetura 🏗️","children":[{"content":"<strong>Incluído no Copilot para M365</strong> 🏢","children":[{"content":"Conexão com fontes de dados externas 🌐","children":[],"payload":{"lines":"29,30"}},{"content":"Processos de negócios e fluxos de trabalho 📈","children":[],"payload":{"lines":"30,31"}},{"content":"Configuração de respostas 🔧","children":[],"payload":{"lines":"31,32"}},{"content":"Criação de extensões do Copilot 🛠️","children":[],"payload":{"lines":"32,33"}}],"payload":{"lines":"28,33"}},{"content":"<strong>Standalone</strong> 🚀","children":[{"content":"Construa copilotos personalizados ✨","children":[],"payload":{"lines":"34,35"}},{"content":"Gestão de diálogo e orquestração de conversa 💬","children":[],"payload":{"lines":"35,36"}},{"content":"SaaS Gerenciado com segurança e governança 🔒","children":[],"payload":{"lines":"36,37"}}],"payload":{"lines":"33,37"}}],"payload":{"lines":"27,37"}}],"payload":{"lines":"25,37"}},{"content":"<strong>Passo a Passo para Construir</strong> 🛠️","children":[{"content":"<strong>Construir e Publicar</strong> 📤","children":[{"content":"Criar um copiloto 🚀","children":[],"payload":{"lines":"39,40"}},{"content":"Adicionar conhecimento 📚","children":[],"payload":{"lines":"40,41"}},{"content":"Personalizar tópicos e ações 🔄","children":[],"payload":{"lines":"41,42"}},{"content":"Publicar e transmitir ao vivo 🌐","children":[],"payload":{"lines":"42,43"}}],"payload":{"lines":"38,43"}},{"content":"<strong>Analisar e Melhorar</strong> 📈","children":[{"content":"Monitorar e obter insights 🕵️‍♂️","children":[],"payload":{"lines":"44,45"}},{"content":"Ajustar tópicos e respostas 🔄","children":[],"payload":{"lines":"45,46"}},{"content":"Adicionar serviços 🔌","children":[],"payload":{"lines":"46,47"}}],"payload":{"lines":"43,47"}}],"payload":{"lines":"37,47"}},{"content":"<strong>Como Construir um Copiloto Personalizado</strong> 🛠️","children":[{"content":"<strong>Início</strong>: Criar um copiloto no SaaS do Copilot Studio 🚀","children":[],"payload":{"lines":"48,49"}},{"content":"<strong>Build</strong>: Projetar a conversa e integrar dados 🧩","children":[],"payload":{"lines":"49,50"}},{"content":"<strong>Publish</strong>: Publicar em diferentes canais (Teams, sites, etc.) 🌐","children":[],"payload":{"lines":"50,51"}},{"content":"<strong>Manage</strong>: Monitorar e melhorar continuamente 📈","children":[],"payload":{"lines":"51,52"}}],"payload":{"lines":"47,52"}},{"content":"<strong>Dicas Finais</strong> 💡","children":[{"content":"Mapeie perguntas dos usuários ❓","children":[],"payload":{"lines":"53,54"}},{"content":"Melhore com engenharia de prompt 🛠️","children":[],"payload":{"lines":"54,55"}},{"content":"Defina a principal fonte de conhecimento 📚","children":[],"payload":{"lines":"55,56"}},{"content":"Crie uma matriz de uso do copiloto 📊","children":[],"payload":{"lines":"56,57"}},{"content":"Explore programas e trilhas de aprendizado 🧑‍🏫","children":[],"payload":{"lines":"57,58"}},{"content":"Microsoft 365 Developer Program e Microsoft Learning 📖","children":[],"payload":{"lines":"58,59"}}],"payload":{"lines":"52,59"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>

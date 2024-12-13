@@ -1,0 +1,59 @@
+# Microsoft Copilot Studio
+- **Objetivo Geral** 🎯
+  - Explicar o que é o Copilot Studio
+  - Ensinar a construir um copiloto para o site da CAIXA e Manual de Segurança
+- **Plataforma Low Code** 💻
+  - Microsoft Power Platform
+- **Pré-requisitos** ✅
+  - E-mail corporativo ou de estudante 📧
+  - Alternativa: Microsoft Developer Program 💼
+    - Acesso a 25 e-mails corporativos
+- **Visão Geral** 👀
+  - O que é um Copilot? 🤖
+    - IA generativa para tarefas complexas 🧩
+  - Power Platform ⚡
+    - **Power Apps**: Desenvolvimento de Aplicativos 📱
+    - **Power Automate**: Automação de Processos ⚙️
+    - **Power BI**: Análise de Negócios 📊
+    - **Copilot Studio**: Copilotos Inteligentes 💡
+    - **Power Pages**: Sites Externos 🌐
+  - Infraestrutura 🔧
+    - Conectores de Dados 🔌
+    - AI Builder 🤖
+    - Microsoft Dataverse 🗄️
+    - Power Fx (Linguagem de Programação) 📝
+    - Ambientes Gerenciados 🏢
+- **Microsoft Copilot Studio** 🌟
+  - Produto de IA Conversacional 🗣️
+  - Arquitetura 🏗️
+    - **Incluído no Copilot para M365** 🏢
+      - Conexão com fontes de dados externas 🌐
+      - Processos de negócios e fluxos de trabalho 📈
+      - Configuração de respostas 🔧
+      - Criação de extensões do Copilot 🛠️
+    - **Standalone** 🚀
+      - Construa copilotos personalizados ✨
+      - Gestão de diálogo e orquestração de conversa 💬
+      - SaaS Gerenciado com segurança e governança 🔒
+- **Passo a Passo para Construir** 🛠️
+  - **Construir e Publicar** 📤
+    - Criar um copiloto 🚀
+    - Adicionar conhecimento 📚
+    - Personalizar tópicos e ações 🔄
+    - Publicar e transmitir ao vivo 🌐
+  - **Analisar e Melhorar** 📈
+    - Monitorar e obter insights 🕵️‍♂️
+    - Ajustar tópicos e respostas 🔄
+    - Adicionar serviços 🔌
+- **Como Construir um Copiloto Personalizado** 🛠️
+  - **Início**: Criar um copiloto no SaaS do Copilot Studio 🚀
+  - **Build**: Projetar a conversa e integrar dados 🧩
+  - **Publish**: Publicar em diferentes canais (Teams, sites, etc.) 🌐
+  - **Manage**: Monitorar e melhorar continuamente 📈
+- **Dicas Finais** 💡
+  - Mapeie perguntas dos usuários ❓
+  - Melhore com engenharia de prompt 🛠️
+  - Defina a principal fonte de conhecimento 📚
+  - Crie uma matriz de uso do copiloto 📊
+  - Explore programas e trilhas de aprendizado 🧑‍🏫
+  - Microsoft 365 Developer Program e Microsoft Learning 📖
