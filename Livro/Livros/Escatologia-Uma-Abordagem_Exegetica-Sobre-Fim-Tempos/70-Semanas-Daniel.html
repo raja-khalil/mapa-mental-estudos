@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.0/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🗂️ Mapa Mental: As 70 Semanas de Daniel","children":[{"content":"📜 Duas Formas de Entender a Profecia","children":[{"content":"🛡️ Opinião Conservadora da Escola Futurista e Dispensacionalista","children":[{"content":"\n<p data-lines=\"6,7\"><strong>Teoria Conservadora Dispensacionalista Futurista</strong></p>","children":[{"content":"⏳ Cada dia da semana corresponde a um ano (Daniel 9:2 e Jeremias 25:11,12)","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"📚 Referências adicionais:","children":[{"content":"Deuteronômio 31:10-13","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"2 Crônicas 36:21","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"li","lines":"8,12"}}],"payload":{"tag":"li","lines":"6,12"}},{"content":"\n<p data-lines=\"12,13\"><strong>Períodos da Profecia:</strong></p>","children":[{"content":"<strong>Primeira a Sétima Semana:</strong> Refere-se ao período de reconstrução de Jerusalém.","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<strong>Sexagésima Segunda Semana:</strong> Tempo até a vinda do Ungido, ou Messias.","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<strong>Septuagésima Semana:</strong> Período da Grande Tribulação antes da segunda vinda de Cristo.","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"li","lines":"12,17"}}],"payload":{"tag":"h3","lines":"5,6"}},{"content":"🏛️ Opinião Liberal da Escola Pretérita e Amilenista","children":[{"content":"\n<p data-lines=\"18,19\"><strong>Teoria Liberal, Pretérita e Amilenista</strong></p>","children":[{"content":"⏳ Interpreta as semanas de Daniel como eventos já passados e cumpridos historicamente.","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"li","lines":"18,21"}},{"content":"\n<p data-lines=\"21,22\"><strong>Períodos da Profecia:</strong></p>","children":[{"content":"<strong>Primeira a Sétima Semana:</strong> Período da reconstrução de Jerusalém pós-exílio babilônico.","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"<strong>Sexagésima Segunda Semana:</strong> Tempo até a destruição do segundo templo em 70 d.C.","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"<strong>Septuagésima Semana:</strong> Período final de perseguição e provações dos judeus antes da destruição do templo.","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"li","lines":"21,26"}}],"payload":{"tag":"h3","lines":"17,18"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"📊 Resumo dos Fatos","children":[{"content":"<strong>Primeira a Sétima Semana:</strong>","children":[{"content":"Ambos concordam que este período se refere à reconstrução de Jerusalém.","children":[],"payload":{"tag":"li","lines":"28,29"}}],"payload":{"tag":"li","lines":"27,29"}},{"content":"<strong>Sexagésima Segunda Semana:</strong>","children":[{"content":"Futuristas: Até a vinda do Messias.","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"Pretéritos: Até a destruição do templo.","children":[],"payload":{"tag":"li","lines":"31,32"}}],"payload":{"tag":"li","lines":"29,32"}},{"content":"<strong>Septuagésima Semana:</strong>","children":[{"content":"Futuristas: Grande Tribulação futura.","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Pretéritos: Destruição do templo e perseguição dos judeus.","children":[],"payload":{"tag":"li","lines":"34,35"}}],"payload":{"tag":"li","lines":"32,35"}}],"payload":{"tag":"h2","lines":"26,27"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

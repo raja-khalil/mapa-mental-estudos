@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌐 Criando Dashboards Interativos com Power BI","children":[{"content":"📊 O que é um Dashboard?","children":[{"content":"Permite criar artefatos de dados direcionados e personalizados.","children":[],"payload":{"lines":"3,5"}}],"payload":{"lines":"2,3"}},{"content":"🛠️ Características","children":[{"content":"<strong>Visuais Fixados:</strong> Componentes visuais constantes.","children":[],"payload":{"lines":"6,7"}},{"content":"<strong>Visuais de Relatórios Distintos:</strong> Diferentes visuais de diversos relatórios.","children":[],"payload":{"lines":"7,9"}}],"payload":{"lines":"5,6"}},{"content":"🗂️ Requisitos para um Dashboard","children":[{"content":"<strong>Conjuntos de Dados ou Reports:</strong> Pode conter vários conjuntos de dados ou relatórios.","children":[],"payload":{"lines":"10,11"}},{"content":"<strong>Painéis:</strong> Ausência de painéis específicos para filtros, visualizações ou campos.","children":[],"payload":{"lines":"11,12"}},{"content":"<strong>Páginas:</strong> Pode ter apenas uma página.","children":[],"payload":{"lines":"12,13"}},{"content":"<strong>Dataset -&gt; Report:</strong> Um conjunto de dados é analisado e transformado em um relatório.","children":[],"payload":{"lines":"13,14"}},{"content":"<strong>Atualização:</strong> Dashboards e relatórios podem ser atualizados regularmente.","children":[],"payload":{"lines":"14,15"}},{"content":"<strong>Manipulação dos Blocos:</strong> Personalização do layout e visualização das informações.","children":[],"payload":{"lines":"15,17"}}],"payload":{"lines":"9,10"}},{"content":"🎨 Formatação com Temas","children":[{"content":"<strong>Uso de Temas no Power BI:</strong> Método rápido para formatar gráficos e blocos.","children":[],"payload":{"lines":"18,19"}},{"content":"<strong>Disponibilidade:</strong> Power BI Desktop e Power BI Service.","children":[],"payload":{"lines":"19,20"}},{"content":"<strong>Fontes de Temas:</strong> Comunidade Power BI oferece diversos temas prontos.","children":[],"payload":{"lines":"20,22"}}],"payload":{"lines":"17,18"}},{"content":"❓ Personalização com P&amp;R (Perguntas e Respostas)","children":[{"content":"<strong>Ferramenta P&amp;R:</strong> Personaliza o dashboard com perguntas direcionadas aos dados.","children":[],"payload":{"lines":"23,24"}},{"content":"<strong>Uso Eficiente:</strong>","children":[{"content":"<strong>Formule Perguntas:</strong> Baseadas no banco de dados disponível. Exemplo: \"Total sales by category\".","children":[],"payload":{"lines":"25,26"}},{"content":"<strong>Fixação de Respostas:</strong> Podem ser transformadas em cartões visuais.","children":[],"payload":{"lines":"26,28"}}],"payload":{"lines":"24,28"}}],"payload":{"lines":"22,23"}},{"content":"🔔 Alertas em Dashboards","children":[{"content":"<strong>Notificação de Usuário:</strong> Configuração de alertas para mudanças significativas nos dados.","children":[],"payload":{"lines":"29,30"}},{"content":"<strong>Disponibilidade:</strong> Power BI Service.","children":[],"payload":{"lines":"30,31"}},{"content":"<strong>Elementos com Alertas:</strong> Medidores, cartões e KPIs.","children":[],"payload":{"lines":"31,33"}}],"payload":{"lines":"28,29"}},{"content":"💬 Adição de Comentários e Marcação de Pessoas","children":[{"content":"<strong>Comentários em Visuais:</strong> Anotações ou feedback diretamente nos visuais.","children":[],"payload":{"lines":"34,35"}},{"content":"<strong>Marcação de Pessoas:</strong> Colaboração eficiente marcando pessoas nos comentários.","children":[],"payload":{"lines":"35,37"}}],"payload":{"lines":"33,34"}},{"content":"🔗 Integração com Microsoft Teams","children":[{"content":"<strong>Criação de Chat no Teams:</strong> Disponível na versão Pro do Power BI para discutir dashboards.","children":[],"payload":{"lines":"38,40"}}],"payload":{"lines":"37,38"}},{"content":"🔄 Relatórios Dinâmicos","children":[{"content":"<strong>Live Page - Relatório:</strong> Dados dinâmicos e atualizações constantes.","children":[],"payload":{"lines":"41,42"}},{"content":"<strong>Fixação no Dashboard:</strong> Relatórios dinâmicos fixados para fácil acesso.","children":[],"payload":{"lines":"42,44"}}],"payload":{"lines":"40,41"}},{"content":"🕐 Quando Usar Dashboards?","children":[{"content":"Coleção de várias fontes, integrando dados diferentes para uma visão completa.","children":[],"payload":{"lines":"45,47"}}],"payload":{"lines":"44,45"}},{"content":"📡 Streaming no Power BI","children":[{"content":"<strong>Dados em Tempo Real:</strong> Monitoramento de grandes volumes com alta velocidade.","children":[],"payload":{"lines":"48,49"}},{"content":"<strong>Dashboards como Telas de Histórias:</strong> Apresentam dados em formato narrativo.","children":[],"payload":{"lines":"49,50"}},{"content":"<strong>Dados em Cache Temporário:</strong> Agiliza a exibição de dados em tempo real.","children":[],"payload":{"lines":"50,51"}}],"payload":{"lines":"47,48"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
