@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌐 Mapa Mental: Data Analytics e Storytelling com Power BI","children":[{"content":"📝 Relatório e Experiência do Usuário no Power BI","children":[{"content":"🎯 Meta e Escopo:","children":[{"content":"<strong>Quem quero alcançar?</strong>","children":[{"content":"🎯 Identificar o público-alvo do relatório.","children":[],"payload":{"tag":"li","lines":"7,8"}}],"payload":{"tag":"li","lines":"6,8"}},{"content":"<strong>Qual tipo de Relatório?</strong>","children":[{"content":"📊 Definir o tipo de relatório que será criado.","children":[],"payload":{"tag":"li","lines":"9,10"}}],"payload":{"tag":"li","lines":"8,10"}},{"content":"<strong>Requisitos de Interface</strong>","children":[{"content":"💻 Especificar as necessidades de interface para o relatório.","children":[],"payload":{"tag":"li","lines":"11,12"}}],"payload":{"tag":"li","lines":"10,12"}},{"content":"<strong>Experiência do Usuário</strong>","children":[{"content":"🌟 Otimizar a experiência do usuário ao interagir com o relatório.","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"li","lines":"12,15"}}],"payload":{"tag":"h3","lines":"5,6"}},{"content":"✅ Requisitos Necessários:","children":[{"content":"<strong>Exibição padrão de dados e lógica de negócios</strong>","children":[{"content":"🔍 Garantir a consistência na apresentação dos dados e lógica de negócios.","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"li","lines":"16,18"}},{"content":"<strong>Fonte única de verdade</strong>","children":[{"content":"🏷️ Utilizar uma única fonte confiável para os dados.","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"li","lines":"18,20"}},{"content":"<strong>Entregar dados atualizados</strong>","children":[{"content":"⏲️ Assegurar que os dados estejam sempre atualizados.","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"li","lines":"20,22"}},{"content":"<strong>Disponibilidade de dados</strong>","children":[{"content":"📂 Garantir a fácil acessibilidade aos dados necessários.","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"li","lines":"22,24"}},{"content":"<strong>Relatórios naturais e amigáveis</strong>","children":[{"content":"🤝 Criar relatórios que sejam intuitivos e fáceis de entender.","children":[],"payload":{"tag":"li","lines":"25,26"}}],"payload":{"tag":"li","lines":"24,26"}},{"content":"<strong>Fornecendo novos insights</strong>","children":[{"content":"💡 Proporcionar novas descobertas e perspectivas por meio dos dados.","children":[],"payload":{"tag":"li","lines":"27,28"}}],"payload":{"tag":"li","lines":"26,28"}},{"content":"<strong>Padrão de marca corporativa</strong>","children":[{"content":"🎨 Manter a identidade visual da marca corporativa nos relatórios.","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"li","lines":"28,31"}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"👥 Requisitos Mínimos dos Relatórios e Público-Alvo:","children":[{"content":"<strong>Público-Alvo:</strong>","children":[{"content":"🧑‍💼 Executivo","children":[{"content":"Perfil do consumidor executivo.","children":[],"payload":{"tag":"li","lines":"34,35"}}],"payload":{"tag":"li","lines":"33,35"}},{"content":"👨‍🔬 Analista","children":[{"content":"Perfil do consumidor analista.","children":[],"payload":{"tag":"li","lines":"36,37"}}],"payload":{"tag":"li","lines":"35,37"}},{"content":"🧑‍💻 Operador de Informações","children":[{"content":"Auxilia na tomada de decisões.","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"37,40"}}],"payload":{"tag":"li","lines":"32,40"}}],"payload":{"tag":"h3","lines":"31,32"}},{"content":"🏆 Influência e Impacto no Relatório Final:","children":[{"content":"Considerar a influência e o impacto do público-alvo no design e conteúdo do relatório final.","children":[],"payload":{"tag":"li","lines":"41,43"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"📈 Tipos de Relatórios de Acordo com Perfil do Usuário:","children":[{"content":"<strong>Executivo</strong>","children":[{"content":"📊 Dashboard","children":[],"payload":{"tag":"li","lines":"45,46"}}],"payload":{"tag":"li","lines":"44,46"}},{"content":"<strong>Analista</strong>","children":[{"content":"📉 Analítico","children":[],"payload":{"tag":"li","lines":"47,48"}}],"payload":{"tag":"li","lines":"46,48"}},{"content":"<strong>Operador de Informações</strong>","children":[{"content":"⚙️ Operacional","children":[],"payload":{"tag":"li","lines":"49,50"}}],"payload":{"tag":"li","lines":"48,50"}},{"content":"<strong>Geral</strong>","children":[{"content":"🏫 Educacional","children":[],"payload":{"tag":"li","lines":"51,53"}}],"payload":{"tag":"li","lines":"50,53"}}],"payload":{"tag":"h3","lines":"43,44"}},{"content":"🖥️ Requisitos de UX de Acordo com Perfil do Usuário:","children":[{"content":"<strong>Executivo</strong>","children":[{"content":"📊 Dashboard","children":[],"payload":{"tag":"li","lines":"55,56"}}],"payload":{"tag":"li","lines":"54,56"}},{"content":"<strong>Analista</strong>","children":[{"content":"📉 Analítico","children":[],"payload":{"tag":"li","lines":"57,58"}}],"payload":{"tag":"li","lines":"56,58"}},{"content":"<strong>Operador de Informações</strong>","children":[{"content":"⚙️ Operacional","children":[],"payload":{"tag":"li","lines":"59,60"}}],"payload":{"tag":"li","lines":"58,60"}},{"content":"<strong>Geral</strong>","children":[{"content":"🏫 Educacional","children":[],"payload":{"tag":"li","lines":"61,63"}}],"payload":{"tag":"li","lines":"60,63"}}],"payload":{"tag":"h3","lines":"53,54"}},{"content":"🧩 Destrinchando os Tipos de Relatórios:","children":[{"content":"📊 Painel (Executivos)","children":[{"content":"<strong>Meta:</strong>","children":[{"content":"🧩 Interpretar a história","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"⏩ Velocidade","children":[],"payload":{"tag":"li","lines":"68,69"}}],"payload":{"tag":"li","lines":"66,69"}},{"content":"<strong>Características:</strong>","children":[{"content":"👓 Autoexplicativos","children":[],"payload":{"tag":"li","lines":"70,71"}},{"content":"🎯 Focado","children":[],"payload":{"tag":"li","lines":"71,72"}},{"content":"🏷️ Rotulados","children":[],"payload":{"tag":"li","lines":"72,73"}}],"payload":{"tag":"li","lines":"69,73"}},{"content":"<strong>Objetivos:</strong>","children":[{"content":"✅ Minimizar margem de interpretação","children":[],"payload":{"tag":"li","lines":"74,76"}}],"payload":{"tag":"li","lines":"73,76"}}],"payload":{"tag":"h4","lines":"65,66"}},{"content":"📉 Relatórios Analíticos","children":[{"content":"🔄 Fluxo de Exploração em Relatórios Analíticos:","children":[{"content":"<strong>Filtragem:</strong>","children":[{"content":"🕵️ Alvo de relevância","children":[],"payload":{"tag":"li","lines":"89,90"}}],"payload":{"tag":"li","lines":"88,90"}},{"content":"**Agrupamento","children":[],"payload":{"tag":"li","lines":"90,91"}}],"payload":{"tag":"h5","lines":"87,88"}}],"payload":{"tag":"h4","lines":"76,77"}}],"payload":{"tag":"h3","lines":"63,64"}}],"payload":{"tag":"h2","lines":"2,3"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

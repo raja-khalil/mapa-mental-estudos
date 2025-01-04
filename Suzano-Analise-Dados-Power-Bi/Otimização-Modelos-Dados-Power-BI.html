@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌟 Otimização de Modelos de Dados no Power BI 🌟","children":[{"content":"🌈 O que é Otimização?","children":[{"content":"Realização de modificações no estado atual do modelo de dados","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"Aumento da eficiência e desempenho","children":[],"payload":{"tag":"li","lines":"4,6"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"🚀 Impacto na Visão do Usuário","children":[{"content":"Problemas:","children":[{"content":"🐢 Lentidão no carregamento","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"⏳ Demora na atualização dos visuais","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"h3","lines":"7,8"}},{"content":"Causas:","children":[{"content":"🔧 Modelagem inadequada","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"❌ Mau uso da linguagem DAX","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"⚙️ Combinação dos dois","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h3","lines":"11,12"}}],"payload":{"tag":"h2","lines":"6,7"}},{"content":"🎯 Vantagens da Otimização","children":[{"content":"👍 Melhor experiência do usuário","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"💯 Desempenho e bons resultados","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"😃 Cliente satisfeito","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"🛠️ Processo de Otimização","children":[{"content":"✔️ Garantir tipos de dados corretos","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"🗑️ Excluir colunas e linhas desnecessárias","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"🔄 Evitar valores repetidos","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"➗ Substituir colunas numéricas por medidas","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"📉 Reduzir cardinalidades","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"🧐 Analisar metadados do modelo","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"🔍 Resumir dados sempre que possível","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"📂 Armazenamento de Dados","children":[{"content":"📡 Acesso aos dados","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"⏱️ Tempo de carregamento","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"🔐 Permissão de acesso","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"🔧 Soluções para Resolver Mau Desempenho","children":[{"content":"📈 Examinar Desempenho:","children":[{"content":"⚙️ Analisar a eficiência das medidas DAX utilizadas","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"🔍 Avaliar as relações entre tabelas","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"🖼️ Revisar os visuais","children":[],"payload":{"tag":"li","lines":"39,41"}}],"payload":{"tag":"h3","lines":"36,37"}},{"content":"🧩 Usar Variáveis:","children":[{"content":"📝 Implementar variáveis nas medidas DAX","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"📊 Utilizar variáveis para armazenar valores intermediários","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"🛠️ Auxiliar na depuração de problemas complexos","children":[],"payload":{"tag":"li","lines":"44,46"}}],"payload":{"tag":"h3","lines":"41,42"}},{"content":"📉 Reduzir Níveis de Cardinalidade:","children":[{"content":"🔢 Simplificar o modelo de dados","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"🗃️ Reestruturar dados","children":[],"payload":{"tag":"li","lines":"48,50"}}],"payload":{"tag":"h3","lines":"46,47"}},{"content":"⚙️ Otimizar DirectQuery:","children":[{"content":"🔧 Ajustar configuração de armazenamento","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"📉 Utilizar tabelas de agregação","children":[],"payload":{"tag":"li","lines":"52,54"}}],"payload":{"tag":"h3","lines":"50,51"}},{"content":"📊 Criar e Gerenciar Agregações:","children":[{"content":"📊 Criar agregações para precomputar e armazenar resumos de dados","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"🧩 Gerenciar agregações adequadamente","children":[],"payload":{"tag":"li","lines":"56,58"}}],"payload":{"tag":"h3","lines":"54,55"}}],"payload":{"tag":"h2","lines":"35,36"}},{"content":"🔍 Como Resolver Mau Funcionamento","children":[{"content":"🔧 Identificação de gargalos","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"📊 Performance Analyser","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"📝 Examinar resultados","children":[],"payload":{"tag":"li","lines":"61,63"}}],"payload":{"tag":"h2","lines":"58,59"}},{"content":"🗜️ Técnicas para Redução de Dados","children":[{"content":"🗑️ Remover colunas desnecessárias","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"🗑️ Remover linhas desnecessárias","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"📊 Otimizar tipos de dados de coluna","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"🧩 Colunas personalizadas","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"🚫 Desabilitar data/hora automática","children":[],"payload":{"tag":"li","lines":"68,70"}}],"payload":{"tag":"h2","lines":"63,64"}},{"content":"🛠️ Ferramentas Adicionais","children":[{"content":"🛠️ Performance Analyzer: Visualizar e medir o desempenho de visuais e consultas","children":[],"payload":{"tag":"li","lines":"71,72"}},{"content":"🛠️ DAX Studio: Ferramenta para depuração e análise avançada de consultas DAX","children":[],"payload":{"tag":"li","lines":"72,73"}}],"payload":{"tag":"h2","lines":"70,71"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
