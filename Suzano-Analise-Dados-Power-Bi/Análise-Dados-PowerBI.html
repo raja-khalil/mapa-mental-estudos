@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.4/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌟 Análise de Dados com Power BI","children":[{"content":"🗂️ 1. Análise de Dados","children":[{"content":"<strong>💼 Redução do Trabalho Manual</strong>: A análise avançada reduz o trabalho manual, ajudando as organizações a tomar melhores decisões empresariais e criar resultados acionáveis e significativos.","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<strong>🧠 Análise Tradicional</strong>: Tradicionalmente, a análise de dados era uma tarefa complexa realizada por engenheiros.","children":[],"payload":{"tag":"li","lines":"4,6"}}],"payload":{"tag":"h4","lines":"2,3"}},{"content":"🎯 2. Simplificação","children":[{"content":"<strong>📊 Recursos visuais</strong>","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"<strong>📈 Estatísticas</strong>","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"<strong>🤖 Recursos de IA</strong>","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"h4","lines":"6,7"}},{"content":"👀 3. Visualização de Dados","children":[{"content":"<strong>🔍 Qualidade dos Dados</strong>: O seu visual é tão bom quanto a qualidade dos dados fornecidos.","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h4","lines":"13,14"}},{"content":"🧩 4. Contexto","children":[{"content":"<strong>📌 Exploração Estatística</strong>","children":[{"content":"Explorar o resumo estatístico","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"Identificar exceções com visuais do Power BI","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"Agrupar e compartimentalizar dados para análise","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Aplicar técnicas de clustering","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"Conduzir análise de série temporal","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"Usar o recurso \"Analisar\"","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"Usar visuais personalizados de análise avançada","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"Examinar insights rápidos","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"Aplicar insights de IA","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"li","lines":"19,30"}}],"payload":{"tag":"h4","lines":"18,19"}},{"content":"📜 5. Resumo Estatístico","children":[{"content":"<strong>📝 Definição</strong>: Fornece uma descrição rápida e simples dos dados.","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"<strong>🛠️ Ferramentas</strong>:","children":[{"content":"DAX","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Histogramas","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"Curvas de sino","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Visuais de linguagem avançada","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"R e Python","children":[],"payload":{"tag":"li","lines":"39,41"}}],"payload":{"tag":"li","lines":"34,41"}}],"payload":{"tag":"h4","lines":"32,33"}},{"content":"📊 6. Funções Estatísticas e Histogramas","children":[{"content":"<table data-lines=\"45,51\">\n<thead data-lines=\"45,46\">\n<tr data-lines=\"45,46\">\n<th>Ferramenta</th>\n<th>Função</th>\n<th>Descrição</th>\n</tr>\n</thead>\n<tbody data-lines=\"47,51\">\n<tr data-lines=\"47,48\">\n<td>DAX</td>\n<td>Fórmulas DAX</td>\n<td>Criar cálculos personalizados</td>\n</tr>\n<tr data-lines=\"48,49\">\n<td>Histogramas</td>\n<td>Distribuição de Frequência</td>\n<td>Visualizar a distribuição dos dados</td>\n</tr>\n<tr data-lines=\"49,50\">\n<td>Curvas de Sino</td>\n<td>Distribuição Normal</td>\n<td>Analisar a forma da distribuição dos dados</td>\n</tr>\n<tr data-lines=\"50,51\">\n<td>R e Python</td>\n<td>Scripts Avançados</td>\n<td>Realizar análises complexas</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"45,51"}}],"payload":{"tag":"h4","lines":"43,44"}},{"content":"🔍 7. Outros Recursos de Data Analytics no Power BI","children":[{"content":"<strong>🥇 N Superiores</strong>:","children":[{"content":"DAX TPON","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"P &amp; R","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"Filtro","children":[],"payload":{"tag":"li","lines":"56,58"}}],"payload":{"tag":"li","lines":"53,58"}}],"payload":{"tag":"h4","lines":"52,53"}},{"content":"🛠️ 8. Criando Visual com Visão N Superiores","children":[{"content":"<strong>💬 P &amp; R</strong>","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"<strong>🔍 Filtros</strong>","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"<strong>📊 DAX</strong>","children":[],"payload":{"tag":"li","lines":"61,63"}}],"payload":{"tag":"h4","lines":"58,59"}},{"content":"❗ 9. Anomalias em Dados","children":[{"content":"<table data-lines=\"69,73\">\n<thead data-lines=\"69,70\">\n<tr data-lines=\"69,70\">\n<th>Tipo de Gráfico</th>\n<th>Função</th>\n<th>Descrição</th>\n</tr>\n</thead>\n<tbody data-lines=\"71,73\">\n<tr data-lines=\"71,72\">\n<td>Gráfico de Dispersão</td>\n<td>Identificar Anomalias</td>\n<td>Visualizar pontos fora do padrão</td>\n</tr>\n<tr data-lines=\"72,73\">\n<td>DAX</td>\n<td>Fórmulas para Outliers</td>\n<td>Detectar valores atípicos automaticamente</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"69,73"}}],"payload":{"tag":"h4","lines":"65,66"}},{"content":"📊 10. Agrupamento e Compartilhamento de Dados","children":[{"content":"<strong>🔍 Clusterização de Dados</strong>","children":[],"payload":{"tag":"li","lines":"75,77"}}],"payload":{"tag":"h4","lines":"74,75"}},{"content":"⏳ 11. Análise Temporal com Power BI","children":[{"content":"<strong>🔄 Play Axis</strong>","children":[],"payload":{"tag":"li","lines":"80,82"}}],"payload":{"tag":"h4","lines":"79,80"}},{"content":"🖱️ 12. Recurso \"Analisar\"","children":[{"content":"<strong>🖱️ Ação</strong>: Botão direito do mouse -&gt; Analisar","children":[],"payload":{"tag":"li","lines":"83,85"}}],"payload":{"tag":"h4","lines":"82,83"}},{"content":"📊 13. Visuais Personalizados de Análise Avançada","children":[],"payload":{"tag":"h4","lines":"85,86"}},{"content":"💡 14. Insights Rápidos","children":[{"content":"<strong>🛠️ Ferramentas</strong>:","children":[{"content":"Power BI online","children":[],"payload":{"tag":"li","lines":"89,90"}},{"content":"Workspace","children":[],"payload":{"tag":"li","lines":"90,91"}},{"content":"Verificar relatório","children":[],"payload":{"tag":"li","lines":"91,92"}},{"content":"Insights rápidos","children":[],"payload":{"tag":"li","lines":"92,94"}}],"payload":{"tag":"li","lines":"88,94"}}],"payload":{"tag":"h4","lines":"87,88"}}],"payload":{"tag":"h3","lines":"0,1"}},{})</script>
+</body>
+</html>
