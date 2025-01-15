@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.5/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌐 Certificação AZ-900: Microsoft Azure Fundamentals","children":[{"content":"📜 Introdução aos Conceitos","children":[{"content":"🎓 O que é Azure","children":[{"content":"<strong>Plataforma de computação em nuvem</strong>","children":[{"content":"<strong>Serviços</strong>:","children":[{"content":"☁️ Computação","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"📡 Rede","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"📦 Armazenamento","children":[],"payload":{"tag":"li","lines":"9,10"}}],"payload":{"tag":"li","lines":"6,10"}},{"content":"<strong>Áreas de domínio do AZ-900</strong>:","children":[{"content":"25-30%: Conceitos de nuvem","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"35-40%: Arquitetura e serviços do Azure","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"30-35%: Gerenciamento e governança do Azure","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"li","lines":"10,15"}}],"payload":{"tag":"li","lines":"5,15"}}],"payload":{"tag":"h3","lines":"4,5"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"☁️ Introdução à Computação em Nuvem","children":[{"content":"🌍 O que é Computação em Nuvem","children":[{"content":"<strong>Serviços de infraestrutura de TI fornecidos pela internet</strong>:","children":[{"content":"💻 Máquinas virtuais","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"📂 Armazenamento","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"🗄️ Bancos de dados e rede","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"🌐 IoT (Internet das Coisas)","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"🤖 ML (Machine Learning)","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"🧠 IA (Inteligência Artificial)","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"li","lines":"18,26"}}],"payload":{"tag":"h3","lines":"17,18"}}],"payload":{"tag":"h2","lines":"15,16"}},{"content":"🛡️ Modelo de Responsabilidade Compartilhada","children":[{"content":"🏢 Responsabilidade Tradicional (Consumidor)","children":[{"content":"Manter o espaço físico","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"Garantir a segurança","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"Manter ou substituir servidores","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Manter toda a infraestrutura","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Manter software e corrigir sistemas","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"🔄 Responsabilidade Compartilhada","children":[{"content":"<strong>Provedor</strong>:","children":[{"content":"🏠 Segurança física","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"⚡ Energia","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"❄️ Resfriamento","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"🌐 Conectividade de rede","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"🏢 Datacenter físico","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"📶 Rede física","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"🖥️ Hosts físicos","children":[],"payload":{"tag":"li","lines":"43,44"}}],"payload":{"tag":"li","lines":"36,44"}},{"content":"<strong>Consumidor</strong>:","children":[{"content":"Dados e informações armazenadas na nuvem","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Segurança de acesso","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"Dispositivos permitidos (telefones, computadores, etc.)","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"Contas e identidades","children":[],"payload":{"tag":"li","lines":"48,50"}}],"payload":{"tag":"li","lines":"44,50"}}],"payload":{"tag":"h3","lines":"35,36"}}],"payload":{"tag":"h2","lines":"26,27"}},{"content":"🌐 Modelos de Nuvem","children":[{"content":"🏠 Nuvem Privada","children":[{"content":"<strong>Evolução do datacenter corporativo</strong> para uma única entidade","children":[],"payload":{"tag":"li","lines":"53,54"}},{"content":"Maior controle e custo","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"Hospedada localmente ou em datacenter dedicado","children":[],"payload":{"tag":"li","lines":"55,57"}}],"payload":{"tag":"h3","lines":"52,53"}},{"content":"🌐 Nuvem Pública","children":[{"content":"Provedor de terceiros","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"Qualquer pessoa pode comprar e usar recursos","children":[],"payload":{"tag":"li","lines":"59,61"}}],"payload":{"tag":"h3","lines":"57,58"}},{"content":"🌐 Nuvem Híbrida","children":[{"content":"🌐 Várias Nuvens","children":[{"content":"Uso de múltiplos provedores de nuvem pública","children":[],"payload":{"tag":"li","lines":"66,68"}}],"payload":{"tag":"h4","lines":"65,66"}},{"content":"🌐 Azure Arc e VMware no Azure","children":[{"content":"<table data-lines=\"71,76\">\n<thead data-lines=\"71,72\">\n<tr data-lines=\"71,72\">\n<th>🌐 Nuvem Pública</th>\n<th>🏠 Nuvem Privada</th>\n<th>🌐 Nuvem Híbrida</th>\n</tr>\n</thead>\n<tbody data-lines=\"73,76\">\n<tr data-lines=\"73,74\">\n<td>Nenhuma despesa de capital para escalar</td>\n<td>Controle total sobre recursos e segurança</td>\n<td>Maior flexibilidade</td>\n</tr>\n<tr data-lines=\"74,75\">\n<td>Provisionamento rápido de aplicativos</td>\n<td>Dados segregados</td>\n<td>Determinação de locais para execução de aplicativos</td>\n</tr>\n<tr data-lines=\"75,76\">\n<td>Pagamento pelo uso</td>\n<td>Custos de hardware iniciais e manutenção</td>\n<td>Controle sobre segurança e conformidade</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"71,76"}}],"payload":{"tag":"h4","lines":"68,69"}}],"payload":{"tag":"h3","lines":"61,62"}}],"payload":{"tag":"h2","lines":"50,51"}},{"content":"💰 Modelo Baseado em Consumo","children":[{"content":"💵 CapEx","children":[{"content":"Despesas de capital (única)","children":[],"payload":{"tag":"li","lines":"80,82"}}],"payload":{"tag":"h3","lines":"79,80"}},{"content":"💵 OpEx","children":[{"content":"Despesas operacionais (serviços/produtos)","children":[],"payload":{"tag":"li","lines":"83,85"}}],"payload":{"tag":"h3","lines":"82,83"}},{"content":"💵 Benefícios do Modelo Baseado em Consumo","children":[{"content":"Sem custos prévios","children":[],"payload":{"tag":"li","lines":"86,87"}},{"content":"Pagamento pelo uso conforme necessidade","children":[],"payload":{"tag":"li","lines":"87,88"}},{"content":"Maior eficiência e escalabilidade","children":[],"payload":{"tag":"li","lines":"88,89"}}],"payload":{"tag":"h3","lines":"85,86"}}],"payload":{"tag":"h2","lines":"77,78"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+# 🌩️ Tipos de Serviço de Nuvem ☁️
+
+## IaaS - Infraestrutura como Serviço 🖥️
+- **Categoria:** Mais flexível
+- **Controle:** Máximo
+- **Responsabilidades do Usuário:**
+  - Manter hardware 🛠️
+  - Conectividade 🌐
+  - Segurança física 🛡️
+  - Sistema operacional:
+    - Instalação 📦
+    - Configuração ⚙️
+    - Manutenção 🛠️
+  - Configuração de rede 🖧
+  - Configuração de banco de dados e armazenamento 🗄️
+- **Características:**
+  - Hardware alugado, usuário decide o uso 📊
+  - Modelo de responsabilidade compartilhada 👫:
+    - Todos os tipos de serviços
+    - IaaS: maior parte da responsabilidade é do usuário
+    - Provedor: infraestrutura e internet
+- **Cenários de Uso:**
+  - Migração Lift-and-Shift 🏗️:
+    - Recursos semelhantes ao datacenter 🏢
+  - Teste e desenvolvimento 🧪:
+    - Inicializar/desativar ambientes rapidamente 🖥️
+
+## PaaS - Plataforma como Serviço 🛠️
+- **Categoria:** Meio termo entre datacenter e solução completa (SaaS) ⚖️
+- **Responsabilidades do Provedor:**
+  - Infraestrutura física 🏗️
+  - Segurança física 🛡️
+  - Conexão com a internet 🌐
+  - Sistemas operacionais 🖥️
+  - Middleware 🛠️
+  - Ferramentas de desenvolvimento 💻
+  - Serviço de Business Intelligence 📊
+- **Vantagens:**
+  - Sem preocupação com licenciamento ou patches 🎟️
+  - Ambiente de desenvolvimento completo 💻
+  - Modelo de responsabilidade compartilhada 👫:
+    - Provedor:
+      - Infraestrutura 🏗️
+      - Acesso à internet 🌐
+      - Sistemas operacionais 🖥️
+      - Banco de dados 🗄️
+      - Ferramentas de desenvolvimento 🛠️
+    - Usuário:
+      - Atualizações 🔄
+      - Patches 🩹
+      - Renovação regular 🔄
+- **Cenários de Uso:**
+  - Estrutura de desenvolvimento 💻
+  - Análise ou Business Intelligence 📊
+
+## SaaS - Software como Serviço 📧
+- **Categoria:** Mais completo
+- **Uso de Aplicativo:**
+  - Email 📧
+  - Software financeiro 💵
+  - Aplicativo de mensagens 📱
+  - Software de conectividade 🌐
+- **Responsabilidade Compartilhada 👫:**
+  - Maior responsabilidade sobre o provedor
+  - Usuário:
+    - Dados que coloca no sistema 💾
+    - Dispositivos conectados 🔌
+    - Usuários e acesso 👥
+- **Cenários de Uso:**
+  - Email e mensagens 📧
+  - Aplicativos de produtividade empresarial 📊
+  - Controle de finanças e despesas 💵

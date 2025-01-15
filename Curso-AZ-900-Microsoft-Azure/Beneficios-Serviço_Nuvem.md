@@ -1,0 +1,64 @@
+- **Benefícios dos Serviços de Nuvem**
+  - **Alta Disponibilidade e Escalabilidade**
+    - **Tempo de Atividade (Disponibilidade)**
+      - Recursos disponíveis quando necessário
+      - Garantia de tempo de atividade elevado
+    - **Demanda (Escala)**
+      - Recursos disponíveis conforme a demanda
+    - **Escalabilidade**
+      - Capacidade de ajustar recursos conforme necessário
+      - Pagamento conforme uso dos serviços
+      - **Variedade da Escala**
+        - **Vertical**
+          - Aumentar ou diminuir a capacidade de recursos
+        - **Horizontal**
+          - Adição ou subtração do número de recursos
+      - **Dimensionamento Vertical**
+        - Adicionar ou retirar mais CPUs e RAM à máquina virtual
+      - **Dimensionamento Horizontal**
+        - Adicionar ou reduzir máquinas virtuais ou contêineres
+
+  - **Confiabilidade**
+    - **Resiliência**
+      - Capacidade de recuperação de falhas
+      - Pilar do Microsoft Azure Well-Architected Framework
+    - **Design Descentralizado**
+      - Escala global
+
+  - **Previsibilidade**
+    - **Desempenho e Custo**
+      - Utilização do Microsoft Well-Architected Framework
+    - **Desempenho**
+      - Dimensionamento automático
+      - Balanceamento de carga
+      - Alta disponibilidade
+
+  - **Custo**
+    - **Acompanhamento em Tempo Real**
+      - Monitorar o uso de recursos em tempo real
+    - **Análise de Dados**
+      - TCO (Custo Total de Propriedade)
+      - Calculadora de Preços
+
+  - **Segurança e Governança**
+    - **Governança**
+      - Implementação de auditorias para garantir conformidade
+    - **Segurança**
+      - Gerenciamento de sistemas operacionais e software
+      - Proteção contra ataques DDoS
+
+  - **Gerenciamento**
+    - **Escalabilidade Automática**
+      - Implementação automática de recursos
+    - **Modelos Pré-Configurados**
+      - Implantar recursos rapidamente
+    - **Integridade dos Recursos**
+      - Monitorar e substituir recursos com falhas
+
+  - **Ferramentas de Gerenciamento**
+    - **Portal Web**
+      - Interface amigável para gerenciamento de recursos
+    - **Interface de Linha de Comando e APIs**
+      - Controle detalhado e automação
+    - **PowerShell**
+      - Automação e gerenciamento avançado de recursos

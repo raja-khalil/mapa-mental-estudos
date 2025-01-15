@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.5/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌩️ Tipos de Serviço de Nuvem ☁️","children":[{"content":"IaaS - Infraestrutura como Serviço 🖥️","children":[{"content":"<strong>Categoria:</strong> Mais flexível","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<strong>Controle:</strong> Máximo","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<strong>Responsabilidades do Usuário:</strong>","children":[{"content":"Manter hardware 🛠️","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"Conectividade 🌐","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"Segurança física 🛡️","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Sistema operacional:","children":[{"content":"Instalação 📦","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Configuração ⚙️","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Manutenção 🛠️","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"9,13"}},{"content":"Configuração de rede 🖧","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"Configuração de banco de dados e armazenamento 🗄️","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"5,15"}},{"content":"<strong>Características:</strong>","children":[{"content":"Hardware alugado, usuário decide o uso 📊","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Modelo de responsabilidade compartilhada 👫:","children":[{"content":"Todos os tipos de serviços","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"IaaS: maior parte da responsabilidade é do usuário","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"Provedor: infraestrutura e internet","children":[],"payload":{"tag":"li","lines":"20,21"}}],"payload":{"tag":"li","lines":"17,21"}}],"payload":{"tag":"li","lines":"15,21"}},{"content":"<strong>Cenários de Uso:</strong>","children":[{"content":"Migração Lift-and-Shift 🏗️:","children":[{"content":"Recursos semelhantes ao datacenter 🏢","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"li","lines":"22,24"}},{"content":"Teste e desenvolvimento 🧪:","children":[{"content":"Inicializar/desativar ambientes rapidamente 🖥️","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"li","lines":"24,27"}}],"payload":{"tag":"li","lines":"21,27"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"PaaS - Plataforma como Serviço 🛠️","children":[{"content":"<strong>Categoria:</strong> Meio termo entre datacenter e solução completa (SaaS) ⚖️","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"<strong>Responsabilidades do Provedor:</strong>","children":[{"content":"Infraestrutura física 🏗️","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"Segurança física 🛡️","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Conexão com a internet 🌐","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Sistemas operacionais 🖥️","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Middleware 🛠️","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Ferramentas de desenvolvimento 💻","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Serviço de Business Intelligence 📊","children":[],"payload":{"tag":"li","lines":"36,37"}}],"payload":{"tag":"li","lines":"29,37"}},{"content":"<strong>Vantagens:</strong>","children":[{"content":"Sem preocupação com licenciamento ou patches 🎟️","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"Ambiente de desenvolvimento completo 💻","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"Modelo de responsabilidade compartilhada 👫:","children":[{"content":"Provedor:","children":[{"content":"Infraestrutura 🏗️","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"Acesso à internet 🌐","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"Sistemas operacionais 🖥️","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"Banco de dados 🗄️","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Ferramentas de desenvolvimento 🛠️","children":[],"payload":{"tag":"li","lines":"46,47"}}],"payload":{"tag":"li","lines":"41,47"}},{"content":"Usuário:","children":[{"content":"Atualizações 🔄","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Patches 🩹","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Renovação regular 🔄","children":[],"payload":{"tag":"li","lines":"50,51"}}],"payload":{"tag":"li","lines":"47,51"}}],"payload":{"tag":"li","lines":"40,51"}}],"payload":{"tag":"li","lines":"37,51"}},{"content":"<strong>Cenários de Uso:</strong>","children":[{"content":"Estrutura de desenvolvimento 💻","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"Análise ou Business Intelligence 📊","children":[],"payload":{"tag":"li","lines":"53,55"}}],"payload":{"tag":"li","lines":"51,55"}}],"payload":{"tag":"h2","lines":"27,28"}},{"content":"SaaS - Software como Serviço 📧","children":[{"content":"<strong>Categoria:</strong> Mais completo","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"<strong>Uso de Aplicativo:</strong>","children":[{"content":"Email 📧","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"Software financeiro 💵","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"Aplicativo de mensagens 📱","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"Software de conectividade 🌐","children":[],"payload":{"tag":"li","lines":"61,62"}}],"payload":{"tag":"li","lines":"57,62"}},{"content":"<strong>Responsabilidade Compartilhada 👫:</strong>","children":[{"content":"Maior responsabilidade sobre o provedor","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"Usuário:","children":[{"content":"Dados que coloca no sistema 💾","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"Dispositivos conectados 🔌","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"Usuários e acesso 👥","children":[],"payload":{"tag":"li","lines":"67,68"}}],"payload":{"tag":"li","lines":"64,68"}}],"payload":{"tag":"li","lines":"62,68"}},{"content":"<strong>Cenários de Uso:</strong>","children":[{"content":"Email e mensagens 📧","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"Aplicativos de produtividade empresarial 📊","children":[],"payload":{"tag":"li","lines":"70,71"}},{"content":"Controle de finanças e despesas 💵","children":[],"payload":{"tag":"li","lines":"71,72"}}],"payload":{"tag":"li","lines":"68,72"}}],"payload":{"tag":"h2","lines":"55,56"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

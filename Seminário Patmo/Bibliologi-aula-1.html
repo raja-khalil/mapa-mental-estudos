@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.5/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🧠 Mapa Mental: Bibliologia | Aula 1","children":[{"content":"🌟 Citação","children":[{"content":"<strong>A Bíblia é mais atual do que o jornal que será lançado amanhã</strong> - Billy Graham","children":[],"payload":{"tag":"li","lines":"3,5"}}],"payload":{"tag":"h4","lines":"2,3"}},{"content":"📚 Estrutura da Bíblia","children":[{"content":"<strong>Organização:</strong>","children":[{"content":"📖 Dividida em Velho Testamento e Novo Testamento","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"📕 66 livros (39 no Velho Testamento e 27 no Novo Testamento)","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"📜 1189 capítulos","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"📄 31173 versículos","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"li","lines":"6,12"}}],"payload":{"tag":"h4","lines":"5,6"}},{"content":"📝 Informações Relevantes sobre a Estrutura","children":[{"content":"<strong>Escrita por:</strong>","children":[{"content":"✍️ Cerca de 40 homens de diversas culturas (Escribas, sacerdotes, reis, profetas e poetas)","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"13,15"}},{"content":"<strong>Tempo de escrita:</strong>","children":[{"content":"🕰 Aproximadamente 1500 anos","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"li","lines":"15,17"}},{"content":"<strong>Idiomas:</strong>","children":[{"content":"🗣 Hebraico, Aramaico e Grego","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"li","lines":"17,20"}}],"payload":{"tag":"h4","lines":"12,13"}},{"content":"📃 Materiais Utilizados","children":[{"content":"📜 Papiro","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"📜 Pergaminho (Proveniente da cidade de Pérgamo)","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"📜 Velino","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"🪨 Ostraco","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"🏺 Tabletes de argila","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"🕯 Tabletes de cera","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"h4","lines":"20,21"}},{"content":"✏️ Instrumentos de Escrita","children":[{"content":"⛏ Cinzel","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"🖊 Estilete de metal","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"🪶 Pena","children":[],"payload":{"tag":"li","lines":"31,33"}}],"payload":{"tag":"h4","lines":"28,29"}},{"content":"📚 Formas dos Livros Antigos","children":[{"content":"📜 Rolos","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"📚 Forma de códice","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"📖 Livro","children":[],"payload":{"tag":"li","lines":"36,38"}}],"payload":{"tag":"h4","lines":"33,34"}},{"content":"📖 Divisões do Livro da Bíblia","children":[{"content":"<strong>Pentateuco:</strong> 📚 5 livros","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"<strong>Históricos:</strong> 📚 12 livros","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"**","children":[],"payload":{"tag":"li","lines":"41,42"}}],"payload":{"tag":"h4","lines":"38,39"}}],"payload":{"tag":"h3","lines":"0,1"}},{})</script>
+</body>
+</html>

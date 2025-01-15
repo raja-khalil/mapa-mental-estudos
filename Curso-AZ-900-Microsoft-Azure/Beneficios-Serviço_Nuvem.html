@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.5/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.5/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"<strong>Benefícios dos Serviços de Nuvem</strong>","children":[{"content":"\n<p data-lines=\"1,2\"><strong>Alta Disponibilidade e Escalabilidade</strong></p>","children":[{"content":"<strong>Tempo de Atividade (Disponibilidade)</strong>","children":[{"content":"Recursos disponíveis quando necessário","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"Garantia de tempo de atividade elevado","children":[],"payload":{"tag":"li","lines":"4,5"}}],"payload":{"tag":"li","lines":"2,5"}},{"content":"<strong>Demanda (Escala)</strong>","children":[{"content":"Recursos disponíveis conforme a demanda","children":[],"payload":{"tag":"li","lines":"6,7"}}],"payload":{"tag":"li","lines":"5,7"}},{"content":"<strong>Escalabilidade</strong>","children":[{"content":"Capacidade de ajustar recursos conforme necessário","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Pagamento conforme uso dos serviços","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"<strong>Variedade da Escala</strong>","children":[{"content":"<strong>Vertical</strong>","children":[{"content":"Aumentar ou diminuir a capacidade de recursos","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"11,13"}},{"content":"<strong>Horizontal</strong>","children":[{"content":"Adição ou subtração do número de recursos","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"li","lines":"10,15"}},{"content":"<strong>Dimensionamento Vertical</strong>","children":[{"content":"Adicionar ou retirar mais CPUs e RAM à máquina virtual","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"li","lines":"15,17"}},{"content":"<strong>Dimensionamento Horizontal</strong>","children":[{"content":"Adicionar ou reduzir máquinas virtuais ou contêineres","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"li","lines":"17,20"}}],"payload":{"tag":"li","lines":"7,20"}}],"payload":{"tag":"li","lines":"1,20"}},{"content":"\n<p data-lines=\"20,21\"><strong>Confiabilidade</strong></p>","children":[{"content":"<strong>Resiliência</strong>","children":[{"content":"Capacidade de recuperação de falhas","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Pilar do Microsoft Azure Well-Architected Framework","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"li","lines":"21,24"}},{"content":"<strong>Design Descentralizado</strong>","children":[{"content":"Escala global","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"li","lines":"24,27"}}],"payload":{"tag":"li","lines":"20,27"}},{"content":"\n<p data-lines=\"27,28\"><strong>Previsibilidade</strong></p>","children":[{"content":"<strong>Desempenho e Custo</strong>","children":[{"content":"Utilização do Microsoft Well-Architected Framework","children":[],"payload":{"tag":"li","lines":"29,30"}}],"payload":{"tag":"li","lines":"28,30"}},{"content":"<strong>Desempenho</strong>","children":[{"content":"Dimensionamento automático","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Balanceamento de carga","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Alta disponibilidade","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"li","lines":"30,35"}}],"payload":{"tag":"li","lines":"27,35"}},{"content":"\n<p data-lines=\"35,36\"><strong>Custo</strong></p>","children":[{"content":"<strong>Acompanhamento em Tempo Real</strong>","children":[{"content":"Monitorar o uso de recursos em tempo real","children":[],"payload":{"tag":"li","lines":"37,38"}}],"payload":{"tag":"li","lines":"36,38"}},{"content":"<strong>Análise de Dados</strong>","children":[{"content":"TCO (Custo Total de Propriedade)","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"Calculadora de Preços","children":[],"payload":{"tag":"li","lines":"40,42"}}],"payload":{"tag":"li","lines":"38,42"}}],"payload":{"tag":"li","lines":"35,42"}},{"content":"\n<p data-lines=\"42,43\"><strong>Segurança e Governança</strong></p>","children":[{"content":"<strong>Governança</strong>","children":[{"content":"Implementação de auditorias para garantir conformidade","children":[],"payload":{"tag":"li","lines":"44,45"}}],"payload":{"tag":"li","lines":"43,45"}},{"content":"<strong>Segurança</strong>","children":[{"content":"Gerenciamento de sistemas operacionais e software","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"Proteção contra ataques DDoS","children":[],"payload":{"tag":"li","lines":"47,49"}}],"payload":{"tag":"li","lines":"45,49"}}],"payload":{"tag":"li","lines":"42,49"}},{"content":"\n<p data-lines=\"49,50\"><strong>Gerenciamento</strong></p>","children":[{"content":"<strong>Escalabilidade Automática</strong>","children":[{"content":"Implementação automática de recursos","children":[],"payload":{"tag":"li","lines":"51,52"}}],"payload":{"tag":"li","lines":"50,52"}},{"content":"<strong>Modelos Pré-Configurados</strong>","children":[{"content":"Implantar recursos rapidamente","children":[],"payload":{"tag":"li","lines":"53,54"}}],"payload":{"tag":"li","lines":"52,54"}},{"content":"<strong>Integridade dos Recursos</strong>","children":[{"content":"Monitorar e substituir recursos com falhas","children":[],"payload":{"tag":"li","lines":"55,57"}}],"payload":{"tag":"li","lines":"54,57"}}],"payload":{"tag":"li","lines":"49,57"}},{"content":"\n<p data-lines=\"57,58\"><strong>Ferramentas de Gerenciamento</strong></p>","children":[{"content":"<strong>Portal Web</strong>","children":[{"content":"Interface amigável para gerenciamento de recursos","children":[],"payload":{"tag":"li","lines":"59,60"}}],"payload":{"tag":"li","lines":"58,60"}},{"content":"<strong>Interface de Linha de Comando e APIs</strong>","children":[{"content":"Controle detalhado e automação","children":[],"payload":{"tag":"li","lines":"61,62"}}],"payload":{"tag":"li","lines":"60,62"}},{"content":"<strong>PowerShell</strong>","children":[{"content":"Automação e gerenciamento avançado de recursos","children":[],"payload":{"tag":"li","lines":"63,64"}}],"payload":{"tag":"li","lines":"62,64"}}],"payload":{"tag":"li","lines":"57,64"}}],"payload":{"tag":"li","lines":"0,64"}},{})</script>
+</body>
+</html>
