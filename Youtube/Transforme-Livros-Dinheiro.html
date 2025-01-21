@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Transforme Livros em Renda","children":[{"content":"🌟 Dois Caminhos","children":[{"content":"📹 YouTube","children":[{"content":"Médio e longo prazo","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"Criar um canal e compartilhar conteúdo regularmente (resenhas de livros, análises, dicas de leitura)","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"<strong>Vantagens</strong>:","children":[{"content":"Construção de audiência","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Geração de receita através de anúncios e parcerias","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"li","lines":"7,11"}}],"payload":{"tag":"h3","lines":"4,5"}},{"content":"📚 Produto Digital","children":[{"content":"Maior escalabilidade","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"Desenvolver e vender produtos digitais relacionados a livros (e-books, cursos online, guias)","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<strong>Vantagens</strong>:","children":[{"content":"Alta escalabilidade","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Possibilidade de renda passiva","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Diversificação de fontes de renda","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"li","lines":"14,19"}}],"payload":{"tag":"h3","lines":"11,12"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"📘 Tipos de Assunto que Deve Aprender","children":[{"content":"💡 Habilidades Especiais que Deve Ter","children":[{"content":"<table data-lines=\"22,27\">\n<thead data-lines=\"22,23\">\n<tr data-lines=\"22,23\">\n<th>Habilidade</th>\n<th>Descrição</th>\n</tr>\n</thead>\n<tbody data-lines=\"24,27\">\n<tr data-lines=\"24,25\">\n<td>Marketing</td>\n<td>Promover seus vídeos ou produtos digitais eficazmente (SEO, mídias sociais, email marketing)</td>\n</tr>\n<tr data-lines=\"25,26\">\n<td>Vendas</td>\n<td>Técnicas de persuasão e fechamento de vendas para converter leads em clientes</td>\n</tr>\n<tr data-lines=\"26,27\">\n<td>Oratória</td>\n<td>Habilidades de comunicação para criar vídeos envolventes e apresentações impactantes</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"22,27"}}],"payload":{"tag":"h3","lines":"21,22"}},{"content":"🧠 Experts","children":[{"content":"Você não precisa saber tudo","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"Apenas saber um pouco mais de quem tiver interesse","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"\"Você não precisa saber tudo, esteja apenas um capítulo à frente deles.\"","children":[],"payload":{"tag":"li","lines":"31,33"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"⚡ Ingrediente X","children":[{"content":"Dominar e criar rotina","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Criar uma rotina de produção de conteúdo","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Sua rotina é um acumulado de ações","children":[],"payload":{"tag":"li","lines":"36,38"}}],"payload":{"tag":"h3","lines":"33,34"}}],"payload":{"tag":"h2","lines":"19,20"}},{"content":"<strong>Resumo</strong>","children":[{"content":"Explore dois caminhos principais: YouTube e Produto Digital.","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"Adquira habilidades especiais em marketing, vendas e oratória.","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"Utilize o conhecimento de experts e desenvolva uma rotina eficaz de produção de conteúdo.","children":[],"payload":{"tag":"li","lines":"42,43"}}],"payload":{"tag":"h2","lines":"38,39"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
