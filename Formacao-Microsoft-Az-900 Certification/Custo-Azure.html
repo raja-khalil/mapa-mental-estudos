@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌐 Fatores que Afetam os Custos do Azure","children":[{"content":"💼 Gerenciamento de Custos","children":[{"content":"<strong>Calculadora de Custos e Preços</strong>","children":[{"content":"Previsão e gestão de gastos","children":[],"payload":{"tag":"li","lines":"4,5"}}],"payload":{"tag":"li","lines":"3,5"}},{"content":"<strong>Gerenciamento de Custos e Marcas</strong>","children":[{"content":"Uso de tags para organizar e categorizar recursos","children":[],"payload":{"tag":"li","lines":"6,7"}}],"payload":{"tag":"li","lines":"5,7"}},{"content":"<strong>Computação em Nuvem</strong>","children":[{"content":"Alocação eficiente de recursos","children":[],"payload":{"tag":"li","lines":"8,10"}}],"payload":{"tag":"li","lines":"7,10"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"📉 Fatores que Afetam os Custos","children":[{"content":"<strong>Tipo de Recurso</strong>","children":[{"content":"Custos específicos baseados em características e finalidades","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"11,13"}},{"content":"<strong>Consumo</strong>","children":[{"content":"Modelo pago conforme o uso; consumo elevado gera custos mais altos","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"13,15"}},{"content":"<strong>Manutenção</strong>","children":[{"content":"Monitoramento e desativação de recursos subutilizados","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"li","lines":"15,17"}},{"content":"<strong>Área Geográfica</strong>","children":[{"content":"Custos variam de acordo com a localização","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"li","lines":"17,19"}},{"content":"<strong>Tráfego de Rede</strong>","children":[{"content":"Custos de dados de saída e transferência entre zonas","children":[],"payload":{"tag":"li","lines":"20,21"}}],"payload":{"tag":"li","lines":"19,21"}},{"content":"<strong>Assinatura</strong>","children":[{"content":"Tipo e configuração da assinatura afetam os custos","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"li","lines":"21,24"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"🛠️ Explorando o Azure Marketplace","children":[{"content":"<strong>Aplicativos e Serviços de Provedores Certificados</strong>","children":[{"content":"Plataformas de contêiner de software livre","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"Imagens de máquinas virtuais e bancos de dados","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"Software de compilação e implantação de aplicativos","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"Ferramentas para desenvolvedores","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"li","lines":"25,31"}}],"payload":{"tag":"h2","lines":"24,25"}},{"content":"🧮 Calculando o Custo Total do Azure","children":[{"content":"<strong>Calculadora de Preços</strong>","children":[{"content":"Estima os custos dos produtos Azure","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Configurações: Região, Camada, Opção de Cobrança, Suporte, Programas e Ofertas, Preço de Desenvolvimento/Teste","children":[],"payload":{"tag":"li","lines":"34,35"}}],"payload":{"tag":"li","lines":"32,35"}},{"content":"<strong>Calculadora de Custo Total de Propriedade (TCO)</strong>","children":[{"content":"Compara custos de infraestrutura local com os da nuvem","children":[],"payload":{"tag":"li","lines":"36,38"}}],"payload":{"tag":"li","lines":"35,38"}}],"payload":{"tag":"h2","lines":"31,32"}},{"content":"📊 Gerenciamento de Custos do Azure","children":[{"content":"<strong>Relatórios</strong>","children":[{"content":"Relatório de cobranças e enriquecimento de dados","children":[],"payload":{"tag":"li","lines":"40,41"}}],"payload":{"tag":"li","lines":"39,41"}},{"content":"<strong>Orçamentos</strong>","children":[{"content":"Definição e controle de gastos","children":[],"payload":{"tag":"li","lines":"42,43"}}],"payload":{"tag":"li","lines":"41,43"}},{"content":"<strong>Alertas</strong>","children":[{"content":"Notificações quando os custos excedem os limites","children":[],"payload":{"tag":"li","lines":"44,45"}}],"payload":{"tag":"li","lines":"43,45"}},{"content":"<strong>Recomendações</strong>","children":[{"content":"Sugestões para otimização de custos","children":[],"payload":{"tag":"li","lines":"46,48"}}],"payload":{"tag":"li","lines":"45,48"}}],"payload":{"tag":"h2","lines":"38,39"}},{"content":"🏷️ Marcas (Tags) no Azure","children":[{"content":"<strong>Metadados para Recursos</strong>","children":[{"content":"Organização lógica dos recursos","children":[],"payload":{"tag":"li","lines":"50,51"}}],"payload":{"tag":"li","lines":"49,51"}},{"content":"<strong>Pares Nome-Valor</strong>","children":[{"content":"Informações de cobrança e filtragem em faturas","children":[],"payload":{"tag":"li","lines":"52,53"}}],"payload":{"tag":"li","lines":"51,53"}},{"content":"<strong>Hereditariedade</strong>","children":[{"content":"Marcas são herdadas pelos recursos","children":[],"payload":{"tag":"li","lines":"54,56"}}],"payload":{"tag":"li","lines":"53,56"}}],"payload":{"tag":"h2","lines":"48,49"}},{"content":"📚 Referências","children":[{"content":"<strong>Livro:</strong> \"Microsoft Azure For Dummies\" por Timothy L. Warner","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"<strong>Artigo:</strong> \"Managing and Optimizing Costs in Azure\" - Journal of Cloud Computing","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"<strong>Sites:</strong>","children":[{"content":"<a href=\"https://azure.microsoft.com/en-us/pricing/calculator/\">Azure Pricing Calculator</a>","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"<a href=\"https://azuremarketplace.microsoft.com/en-us/marketplace\">Azure Marketplace</a>","children":[],"payload":{"tag":"li","lines":"61,62"}}],"payload":{"tag":"li","lines":"59,62"}},{"content":"<strong>Vídeo:</strong> \"Azure Cost Management and Optimization\" no YouTube","children":[],"payload":{"tag":"li","lines":"62,64"}}],"payload":{"tag":"h2","lines":"56,57"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"📊 Dimensionamento de Unidades de Produtividade","children":[],"payload":{"tag":"h1","lines":"0,1"}},{"content":"⚙️ Dimensionar seu Aplicativo de Processamento","children":[{"content":"🌐 Cenário de Exemplo","children":[],"payload":{"tag":"h2","lines":"10,11"}},{"content":"💻 Processador de Eventos ou Cliente Consumidor","children":[],"payload":{"tag":"h2","lines":"13,14"}},{"content":"🗂️ Acompanhamento de Propriedade da Partição","children":[],"payload":{"tag":"h2","lines":"20,21"}},{"content":"📬 Receber Mensagens","children":[],"payload":{"tag":"h2","lines":"25,26"}},{"content":"🛠️ Definindo o Ponto de Verificação","children":[],"payload":{"tag":"h2","lines":"30,31"}},{"content":"🔒 Instâncias de Processador e de Segurança do Thread","children":[],"payload":{"tag":"h2","lines":"35,36"}}],"payload":{"tag":"h1","lines":"7,8"}},{"content":"🔐 Controlar o Acesso a Eventos","children":[{"content":"🔑 Funções Internas do Azure","children":[{"content":"<table data-lines=\"41,46\">\n<thead data-lines=\"41,42\">\n<tr data-lines=\"41,42\">\n<th>Função</th>\n<th>Descrição</th>\n</tr>\n</thead>\n<tbody data-lines=\"43,46\">\n<tr data-lines=\"43,44\">\n<td>Proprietário de Dados do Hubs de Eventos do Azure</td>\n<td>Acesso completo aos recursos dos Hubs de Eventos</td>\n</tr>\n<tr data-lines=\"44,45\">\n<td>Remetente de Dados do Hubs de Eventos do Azure</td>\n<td>Acesso para envio aos recursos dos Hubs de Eventos</td>\n</tr>\n<tr data-lines=\"45,46\">\n<td>Receptor de Dados do Hubs de Eventos do Azure</td>\n<td>Acesso para recebimento aos recursos dos Hubs de Eventos</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"41,46"}}],"payload":{"tag":"h2","lines":"40,41"}},{"content":"📋 Autorização de Acesso","children":[{"content":"Autorizar o acesso com identidades gerenciadas.","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Autorizar o acesso com o Microsoft Identity Platform.","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Autorizar o acesso a editores de Hubs de Eventos com assinaturas de acesso compartilhado.","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h2","lines":"47,48"}}],"payload":{"tag":"h1","lines":"38,39"}},{"content":"⚙️ Executar Operações Comuns com a Biblioteca de Clientes dos Hubs de Eventos","children":[{"content":"🔍 Inspecionar um Hub de Eventos","children":[{"content":"<pre data-lines=\"55,60\"><code class=\"language-csharp\"><span class=\"hljs-keyword\">await</span> <span class=\"hljs-keyword\">using</span> (<span class=\"hljs-keyword\">var</span> producer = <span class=\"hljs-keyword\">new</span> EventHubProducerClient(connectionString, eventHubName))\n{\n    <span class=\"hljs-built_in\">string</span>[] partitionIds = <span class=\"hljs-keyword\">await</span> producer.GetPartitionIdsAsync();\n}\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"55,60"}}],"payload":{"tag":"h2","lines":"54,55"}}],"payload":{"tag":"h1","lines":"52,53"}}]},{})</script>
+</body>
+</html>

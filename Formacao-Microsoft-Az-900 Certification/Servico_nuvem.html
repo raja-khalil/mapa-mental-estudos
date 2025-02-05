@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🧠 Mapa Mental: Serviços em Nuvem e Modelo de Responsabilidade Compartilhada","children":[{"content":"🌐 Tipos de Serviços: IaaS, PaaS e SaaS na Azure","children":[{"content":"🛠️ IaaS (Infraestrutura como Serviço)","children":[{"content":"<strong>Serviços e armazenamento</strong> 💾","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"<strong>Firewalls/segurança de rede</strong> 🔒","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"<strong>Planta física/edifício do datacenter</strong> 🏢","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"<strong>Criação de infraestrutura de TI de pagamento conforme o uso</strong> 💳","children":[{"content":"Permite alugar servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais.","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"li","lines":"8,11"}}],"payload":{"tag":"h3","lines":"4,5"}},{"content":"⚙️ PaaS (Plataforma como Serviço)","children":[{"content":"<strong>Inclui IaaS</strong> 🛠️","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"<strong>Sistema Operacional</strong> 🖥️","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<strong>Ferramentas para desenvolvedores</strong> 👨‍💻","children":[{"content":"Análise de negócios 📊","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Gerenciamento de banco de dados 🗄️","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"li","lines":"14,17"}},{"content":"<strong>Ambiente para criação, teste e implantação de aplicativos</strong> 🛠️","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h3","lines":"11,12"}},{"content":"📱 SaaS (Software como Serviço)","children":[{"content":"<strong>Inclui IaaS + PaaS</strong> 🛠️ ⚙️","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<strong>Hospedagem de aplicativos/apps</strong> 🏠","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"<strong>Conexão e uso de aplicativos baseados em nuvem pela internet</strong> 🌐","children":[{"content":"Exemplo: Microsoft Office 365 📄, e-mail ✉️, calendários 📅","children":[],"payload":{"tag":"li","lines":"23,25"}}],"payload":{"tag":"li","lines":"22,25"}}],"payload":{"tag":"h3","lines":"19,20"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"📋 Modelo de Responsabilidade Compartilhada","children":[{"content":"🎯 Divisão das responsabilidades entre Microsoft e Cliente:","children":[{"content":"1. <strong>SaaS (Software as a Service)</strong> 📱","children":[],"payload":{"tag":"li","lines":"30,31","listIndex":1}},{"content":"2. <strong>PaaS (Platform as a Service)</strong> ⚙️","children":[],"payload":{"tag":"li","lines":"31,32","listIndex":2}},{"content":"3. <strong>IaaS (Infrastructure as a Service)</strong> 🛠️","children":[],"payload":{"tag":"li","lines":"32,33","listIndex":3}},{"content":"4. <strong>On-premises (No local)</strong> 🏠","children":[],"payload":{"tag":"li","lines":"33,35","listIndex":4}}],"payload":{"tag":"h3","lines":"29,30"}},{"content":"📊 Seções do gráfico:","children":[{"content":"1. <strong>Responsabilidade retida pelo cliente</strong> 🏠","children":[],"payload":{"tag":"li","lines":"36,37","listIndex":1}},{"content":"2. <strong>Responsabilidade varia conforme o tipo</strong> 🔄","children":[],"payload":{"tag":"li","lines":"37,38","listIndex":2}},{"content":"3. <strong>Transferência de responsabilidade para provedores de nuvem</strong> ☁️","children":[],"payload":{"tag":"li","lines":"38,40","listIndex":3}}],"payload":{"tag":"h3","lines":"35,36"}},{"content":"📋 Responsabilidades listadas:","children":[{"content":"<strong>Informações e dados</strong> 📄","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"<strong>Dispositivos (móveis e PCs)</strong> 💻","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"<strong>Contas e identidades</strong> 👤","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"<strong>Infraestrutura de identidade e diretório</strong> 🏢","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"<strong>Aplicativos</strong> 📱","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"<strong>Controles de rede</strong> 🌐","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"<strong>Sistema operacional</strong> 🖥️","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"<strong>Hosts físicos</strong> 🏢","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"<strong>Rede física</strong> 🌐","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"<strong>Datacenter físico</strong> 🏢","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"🖌️ Codificação por cor:","children":[{"content":"<strong>Azul claro para Microsoft</strong> 🔵","children":[],"payload":{"tag":"li","lines":"53,54"}},{"content":"<strong>Azul escuro para o cliente</strong> 🔵","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"<strong>Responsabilidade compartilhada</strong> 🔵🔵","children":[],"payload":{"tag":"li","lines":"55,57"}}],"payload":{"tag":"h3","lines":"52,53"}}],"payload":{"tag":"h2","lines":"27,28"}},{"content":"📊 Comparação dos Serviços de Nuvem","children":[{"content":"<table data-lines=\"63,68\">\n<thead data-lines=\"63,64\">\n<tr data-lines=\"63,64\">\n<th><strong>Serviço</strong></th>\n<th><strong>Descrição</strong></th>\n<th><strong>Responsabilidades</strong></th>\n<th><strong>Modelo de Pagamento</strong></th>\n</tr>\n</thead>\n<tbody data-lines=\"65,68\">\n<tr data-lines=\"65,66\">\n<td><strong>IaaS</strong></td>\n<td>Serviço de nuvem mais flexível; você configura e gerencia o hardware para seu aplicativo.</td>\n<td>Infraestrutura básica como servidores e redes.</td>\n<td>Pagamento conforme uso.</td>\n</tr>\n<tr data-lines=\"66,67\">\n<td><strong>PaaS</strong></td>\n<td>Focado no desenvolvimento de aplicativos; o gerenciamento de plataforma é realizado pelo provedor de nuvem.</td>\n<td>Ferramentas de desenvolvimento e sistemas operacionais.</td>\n<td>Pagamento conforme uso.</td>\n</tr>\n<tr data-lines=\"67,68\">\n<td><strong>SaaS</strong></td>\n<td>Aplicativos hospedados que os usuários acessam pela internet; exemplo: Microsoft Office 365.</td>\n<td>Gerenciamento de aplicações e dados pelo provedor.</td>\n<td>Modelo de assinatura.</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"63,68"}}],"payload":{"tag":"h2","lines":"61,62"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

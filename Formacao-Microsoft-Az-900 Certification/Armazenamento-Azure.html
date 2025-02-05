@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"🌐 Contas de Armazenamento no Azure","children":[{"content":"Nomeação da Conta","children":[{"content":"🔠 Nome exclusivo","children":[{"content":"3 a 24 caracteres","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"Não pode repetir","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"Exemplo: storage-account + recurso + projeto + complemento","children":[],"payload":{"tag":"li","lines":"6,8"}}],"payload":{"tag":"li","lines":"3,8"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"Acesso Global","children":[{"content":"🌍 Fornece acesso à internet em todo o mundo","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Redundância de Armazenamento","children":[{"content":"Configurações de Redundância","children":[{"content":"<table data-lines=\"16,22\">\n<thead data-lines=\"16,17\">\n<tr data-lines=\"16,17\">\n<th>🔄 Configuração de Redundância</th>\n<th>🏢 Implantação</th>\n<th>🛡️ Durabilidade</th>\n</tr>\n</thead>\n<tbody data-lines=\"18,22\">\n<tr data-lines=\"18,19\">\n<td><strong>LRS</strong> (Local)</td>\n<td>Datacenter individual</td>\n<td>99.999999999%</td>\n</tr>\n<tr data-lines=\"19,20\">\n<td><strong>ZRS</strong> (Zona)</td>\n<td>3 zonas de disponibilidade</td>\n<td>99.9999999999%</td>\n</tr>\n<tr data-lines=\"20,21\">\n<td><strong>GRS</strong> (Geográfica)</td>\n<td>Datacenter em região primária e secundária</td>\n<td>99.99999999999999%</td>\n</tr>\n<tr data-lines=\"21,22\">\n<td><strong>GZRS</strong> (Zona Geográfica)</td>\n<td>3 zonas na primária e 1 datacenter na secundária</td>\n<td>99.99999999999999%</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"16,22"}}],"payload":{"tag":"h3","lines":"15,16"}}],"payload":{"tag":"h2","lines":"11,12"}},{"content":"Serviços de Armazenamento","children":[{"content":"<table data-lines=\"24,31\">\n<thead data-lines=\"24,25\">\n<tr data-lines=\"24,25\">\n<th>🛠️ Serviço</th>\n<th>📄 Descrição</th>\n</tr>\n</thead>\n<tbody data-lines=\"26,31\">\n<tr data-lines=\"26,27\">\n<td><strong>Blob</strong></td>\n<td>Dados não estruturados (texto, binário)</td>\n</tr>\n<tr data-lines=\"27,28\">\n<td><strong>Disco</strong></td>\n<td>Discos para VMs, aplicativos</td>\n</tr>\n<tr data-lines=\"28,29\">\n<td><strong>Fila</strong></td>\n<td>Mensagens até 64KB</td>\n</tr>\n<tr data-lines=\"29,30\">\n<td><strong>Arquivos</strong></td>\n<td>Compartilhamento via SMB</td>\n</tr>\n<tr data-lines=\"30,31\">\n<td><strong>Tabelas</strong></td>\n<td>Dados estruturados não relacionais</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"24,31"}}],"payload":{"tag":"h2","lines":"23,24"}},{"content":"Pontos de Extremidade Públicas","children":[{"content":"<table data-lines=\"33,40\">\n<thead data-lines=\"33,34\">\n<tr data-lines=\"33,34\">\n<th>🌐 Serviço</th>\n<th>🔗 Endpoint</th>\n</tr>\n</thead>\n<tbody data-lines=\"35,40\">\n<tr data-lines=\"35,36\">\n<td><strong>Blob</strong></td>\n<td><code>https://&lt;storage-account-name&gt;.blob.core.windows.net</code></td>\n</tr>\n<tr data-lines=\"36,37\">\n<td><strong>Data Lake Gen2</strong></td>\n<td><code>https://&lt;storage-account-name&gt;.dfs.core.windows.net</code></td>\n</tr>\n<tr data-lines=\"37,38\">\n<td><strong>Arquivos</strong></td>\n<td><code>https://&lt;storage-account-name&gt;.file.core.windows.net</code></td>\n</tr>\n<tr data-lines=\"38,39\">\n<td><strong>Filas</strong></td>\n<td><code>https://&lt;storage-account-name&gt;.queue.core.windows.net</code></td>\n</tr>\n<tr data-lines=\"39,40\">\n<td><strong>Tabelas</strong></td>\n<td><code>https://&lt;storage-account-name&gt;.table.core.windows.net</code></td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"33,40"}}],"payload":{"tag":"h2","lines":"32,33"}},{"content":"Camadas de Acesso","children":[{"content":"<table data-lines=\"42,48\">\n<thead data-lines=\"42,43\">\n<tr data-lines=\"42,43\">\n<th>🎚️ Camada</th>\n<th>📖 Descrição</th>\n<th>📅 Requisitos</th>\n</tr>\n</thead>\n<tbody data-lines=\"44,48\">\n<tr data-lines=\"44,45\">\n<td><strong>Frequente</strong></td>\n<td>Dados acessados frequentemente</td>\n<td>-</td>\n</tr>\n<tr data-lines=\"45,46\">\n<td><strong>Esporádico</strong></td>\n<td>Dados acessados raramente (30 dias)</td>\n<td>30 dias</td>\n</tr>\n<tr data-lines=\"46,47\">\n<td><strong>Frio</strong></td>\n<td>Dados acessados raramente (90 dias)</td>\n<td>90 dias</td>\n</tr>\n<tr data-lines=\"47,48\">\n<td><strong>Arquivo Morto</strong></td>\n<td>Dados acessados raramente (180 dias)</td>\n<td>180 dias</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"42,48"}}],"payload":{"tag":"h2","lines":"41,42"}},{"content":"Migrações para o Azure","children":[{"content":"Opções de Migração","children":[{"content":"<table data-lines=\"54,59\">\n<thead data-lines=\"54,55\">\n<tr data-lines=\"54,55\">\n<th>🚛 Opção</th>\n<th>📄 Descrição</th>\n</tr>\n</thead>\n<tbody data-lines=\"56,59\">\n<tr data-lines=\"56,57\">\n<td><strong>Data Box</strong></td>\n<td>Migração física (80TB)</td>\n</tr>\n<tr data-lines=\"57,58\">\n<td><strong>Data Box Disk</strong></td>\n<td>Versão menor do Data Box</td>\n</tr>\n<tr data-lines=\"58,59\">\n<td><strong>Data Box Heavy</strong></td>\n<td>Versão maior do Data Box</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"54,59"}}],"payload":{"tag":"h3","lines":"53,54"}}],"payload":{"tag":"h2","lines":"49,50"}},{"content":"Gerenciamento de Arquivos","children":[{"content":"<table data-lines=\"61,66\">\n<thead data-lines=\"61,62\">\n<tr data-lines=\"61,62\">\n<th>💼 Ferramenta</th>\n<th>📄 Descrição</th>\n</tr>\n</thead>\n<tbody data-lines=\"63,66\">\n<tr data-lines=\"63,64\">\n<td><strong>AzCopy</strong></td>\n<td>Linha de comando para copiar blobs/arquivos</td>\n</tr>\n<tr data-lines=\"64,65\">\n<td><strong>Gerenciador do Azure</strong></td>\n<td>Interface gráfica (Windows, Mac, Linux)</td>\n</tr>\n<tr data-lines=\"65,66\">\n<td><strong>Sincronização de Arquivos</strong></td>\n<td>Sincronização bidirecional, liberação de espaço</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"61,66"}}],"payload":{"tag":"h2","lines":"60,61"}},{"content":"Referências","children":[{"content":"<strong>Microsoft Azure Documentation</strong>: <a href=\"https://docs.microsoft.com/en-us/azure/storage/\">Azure Storage Overview</a>","children":[],"payload":{"tag":"li","lines":"68,69"}}],"payload":{"tag":"h2","lines":"67,68"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>

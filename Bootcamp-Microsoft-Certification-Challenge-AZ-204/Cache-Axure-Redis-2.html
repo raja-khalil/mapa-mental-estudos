@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"🛠️ Acessar Cache Redis de um Cliente","children":[{"content":"<strong>Nome do Host:</strong> Endereço público do cache (ex.: sportsresults.redis.cache.windows.net).","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<strong>Chave de Acesso:</strong> Senha do cache (primária e secundária).","children":[],"payload":{"tag":"li","lines":"4,6"}}],"payload":{"tag":"h1","lines":"0,1"}},{"content":"💻 Interagir com o Cache do Azure para Redis usando .NET","children":[{"content":"🚀 StackExchange.Redis","children":[{"content":"Criar uma Conexão","children":[{"content":"<pre data-lines=\"9,14\"><code class=\"language-csharp\"><span class=\"hljs-keyword\">using</span> StackExchange.Redis;\n\n<span class=\"hljs-keyword\">var</span> connectionString = <span class=\"hljs-string\">\"[nome-do-cache].redis.cache.windows.net:6380,password=[senha-aqui],ssl=True,abortConnect=False\"</span>;\n<span class=\"hljs-keyword\">var</span> redisConnection = ConnectionMultiplexer.Connect(connectionString);\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"9,14"}}],"payload":{"tag":"h3","lines":"8,9"}}],"payload":{"tag":"h2","lines":"7,8"}}],"payload":{"tag":"h1","lines":"6,7"}}]},{})</script>
+</body>
+</html>
